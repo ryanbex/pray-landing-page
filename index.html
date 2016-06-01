@@ -32,7 +32,7 @@
       m=s.getElementsByTagName(o)[0];a.async=1;a.src=g;m.parentNode.insertBefore(a,m)
       })(window,document,'script','https://www.google-analytics.com/analytics.js','ga');
 
-      ga('create', 'UA-75285546-8', 'auto');
+      ga('create', 'UA-75285546-8', 'auto', {'name': 'bex'});
       ga('send', 'pageview');
 
     </script>
@@ -43,7 +43,7 @@
       m=s.getElementsByTagName(o)[0];a.async=1;a.src=g;m.parentNode.insertBefore(a,m)
       })(window,document,'script','https://www.google-analytics.com/analytics.js','ga');
 
-      ga('create', 'UA-78099169-1', 'auto');
+      ga('create', 'UA-78099169-1', 'auto', {'name': 'pray'});
       ga('send', 'pageview');
 
     </script>
@@ -70,10 +70,8 @@ function clickCounter() {
     } else {
         document.getElementById("result").innerHTML = "";
     }
-    ga('create', 'UA-75285546-8', 'auto');
-    ga('send', 'event', 'buttons', 'click', 'pray', 1);
-    ga('create', 'UA-78099169-1', 'auto');
-    ga('send', 'event', 'buttons', 'click', 'pray', 1);
+    ga('pray.send', 'event', 'buttons', 'click', 'pray', 1);
+    ga('bex.send', 'event', 'buttons', 'click', 'pray', 1);
 }
 </script>
   <body>
