@@ -60,20 +60,13 @@
     <meta name="theme-color" content="#663fb5">
     <link rel="stylesheet" href="css/landio.css">
   </head>
-<script>
-function clickCounter() {
-    if(typeof(Storage) !== "undefined") {
-        if (localStorage.clickcount) {
-            localStorage.clickcount = Number(localStorage.clickcount)+1;
-        } else {
-            localStorage.clickcount = 1;
-        }
-        document.getElementById("result").innerHTML = "You have clicked the button " + localStorage.clickcount + " time(s).";
-    } else {
-        document.getElementById("result").innerHTML = "Sorry, your browser does not support web storage...";
-    }
-}
-</script>
+  <script type="text/javascript">
+    var clicks = 0;
+    function onClick() {
+        clicks += 1;
+        document.getElementById("clicks").innerHTML = clicks;
+    };
+    </script>
   <body>
 
     <!-- Hero Section
@@ -88,8 +81,8 @@ function clickCounter() {
             </br>
             <h3 style="color:white;">pray for those affected by the shooting at UCLA and those who've suffered from gun violence around the world.</h3>
             </br>
-          <p><button onclick="clickCounter()" type="button" style="color:black">Pray</button></p>
-          <div id="result"></div>
+            <button type="button" onClick="onClick()">Pray</button>
+            <p>Prayers: <a id="clicks">0</a></p>
           </div>
           <!--
           <div class="col-lg-6 col-lg-offset-0 col-md-6 col-md-offset-0">
