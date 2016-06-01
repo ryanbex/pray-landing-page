@@ -633,7 +633,7 @@ $custom-min-height: 37.5em; // 600
   padding-top: 7rem;
   margin-bottom: 0;
   background: rgba(29,87,158,0.15) url(../img/bg-ucla-xlg.jpg) no-repeat center bottom;
-  background-size: cover;
+  background-size: contain;
   border-radius: 0;
 
   @include media-breakpoint-down(sm) {
