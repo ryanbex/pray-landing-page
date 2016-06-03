@@ -54,6 +54,7 @@
 
     function initialize() {
       var feed = new google.feeds.Feed("https://www.google.com/alerts/feeds/03247610925581441578/3964825511498765737");
+      console.log(feed);
       feed.load(function(result) {
         if (!result.error) {
           var container = document.getElementById("feed");
@@ -80,29 +81,28 @@
     <meta name="theme-color" content="#663fb5">
     <link rel="stylesheet" href="css/landio.css">
   </head>
-<script>
-function clickCounter() {
-    if(typeof(Storage) !== "undefined") {
-        if (localStorage.clickcount) {
-            localStorage.clickcount = Number(localStorage.clickcount)+1;
-        } else {
-            localStorage.clickcount = 1;
-        }
-        document.getElementById("result").innerHTML = "You have prayed!";
-    } else {
-        document.getElementById("result").innerHTML = "";
-    }
-    ga('pray.send', 'event', 'buttons', 'click', 'pray', 1);
-    ga('bex.send', 'event', 'buttons', 'click', 'pray', 1);
-}
-</script>
+  <script>
+  function clickCounter() {
+      if(typeof(Storage) !== "undefined") {
+          if (localStorage.clickcount) {
+              localStorage.clickcount = Number(localStorage.clickcount)+1;
+          } else {
+              localStorage.clickcount = 1;
+          }
+          document.getElementById("result").innerHTML = "You have prayed!";
+      } else {
+          document.getElementById("result").innerHTML = "";
+      }
+      ga('pray.send', 'event', 'buttons', 'click', 'pray', 1);
+      ga('bex.send', 'event', 'buttons', 'click', 'pray', 1);
+  }
+  </script>
   <body>
 
     <!-- Hero Section
     ================================================== -->
 
     <header class="jumbotron bg-inverse text-xs-center center-vertically" role="banner" style="background-size: 100% 100%;">
-      <div class
       <div class="container" >
         <div class="row">
           <div class="col-lg-6 col-lg-offset-3 col-md-6 col-md-offset-3 col-sm-8 col-sm-offset-2">
@@ -130,7 +130,12 @@ function clickCounter() {
         ================================================== -->
       </div>
     </header>
-  
+    <section class="section-intro bg-faded text-xs-center feed" id="#feed">
+      <div class="container" >
+        <div class="row">
+        </div>
+      </div>
+    </section>
     <!-- Intro
     
 
