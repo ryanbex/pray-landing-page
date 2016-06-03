@@ -632,8 +632,8 @@ $custom-min-height: 37.5em; // 600
 .jumbotron {
   padding-top: 7rem;
   margin-bottom: 0;
-  background: #663fb5 url(../img/bg-header-2.jpg) no-repeat center bottom;
-  background-size: cover;
+  background: #fff no-repeat center bottom;
+  background-size: contain;
   border-radius: 0;
 
   @include media-breakpoint-down(sm) {
