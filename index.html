@@ -106,6 +106,10 @@
       $.ajax({
         method: "POST",
         url: "https://wsmtet5y0c.execute-api.us-east-1.amazonaws.com/prod/prayer-count",
+        headers: {
+            'Access-Control-Allow-Origin':'*',
+            'Content-Type':'application/json'
+        },
         data: { prayerEvent: "ucla-shooting"}
       }).done(function( msg ) {
           console.log( msg );
@@ -115,10 +119,14 @@
   function refreshCounter() {
       $.ajax({
         url: "https://wsmtet5y0c.execute-api.us-east-1.amazonaws.com/prod/prayer-count",
+        headers: {
+            'Access-Control-Allow-Origin':'*',
+            'Content-Type':'application/json'
+        },
         data: { prayerEvent: "ucla-shooting"}
-      }).done(function( msg ) {
-        document.getElementById("result").innerHTML = msg.responseText;
-          console.log( "Updated: " + msg );
+      }).done(function( response ) {
+        document.getElementById("result").innerHTML = response.Item.prayerCount;
+        console.log( "Updated: " + response.Item );
       });
   }
   window.setInterval(function(){
