@@ -101,6 +101,7 @@
         data: { prayerEvent: "ucla-shooting"}
       }).done(function( response ) {
           console.log( response );
+          document.getElementById("result").innerHTML = "";
           document.getElementById("result").innerHTML = "You've prayed!";
       });
   }
