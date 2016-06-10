@@ -97,6 +97,9 @@
       ga('bex.send', 'event', 'buttons', 'click', 'pray', 1);
       $.ajax({
         method: "POST",
+        headers: {
+          'Access-Control-Allow-Origin': '*'
+        },
         url: "https://wsmtet5y0c.execute-api.us-east-1.amazonaws.com/prod/prayer-count",
         data: { prayerEvent: "ucla-shooting"}
       }).done(function( response ) {
@@ -104,6 +107,7 @@
           document.getElementById("result").innerHTML = "";
           document.getElementById("result").innerHTML = "You've prayed!";
       });
+      refreshCounter();
   }
 
   function refreshCounter() {
