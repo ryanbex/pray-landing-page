@@ -118,7 +118,7 @@
         data: { prayerEvent: "ucla-shooting"}
       }).done(function( response ) {
         document.getElementById("result").innerHTML = response.Item.prayerCount;
-        console.log( "Updated: " + response.Item );
+        console.log( "Updated: " + response.Item.prayerCount );
       });
   }
   window.setInterval(function(){
