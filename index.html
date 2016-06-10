@@ -70,16 +70,6 @@
     google.setOnLoadCallback(initialize);
 
     </script>
-    <script type="text/javascript">
-      $.ajax({
-        method: "POST",
-        url: "some.php",
-        data: { name: "John", location: "Boston" }
-      })
-        .done(function( msg ) {
-          alert( "Data Saved: " + msg );
-        });
-    </script>
     <link src="https://maxcdn.bootstrapcdn.com/font-awesome/4.6.3/css/font-awesome.min.css">
     <link rel="icon" type="image/png" href="img/favicon/favicon-heartbeat.ico">
 
@@ -96,7 +86,7 @@
       ga('pray.send', 'event', 'buttons', 'click', 'pray', 1);
       ga('bex.send', 'event', 'buttons', 'click', 'pray', 1);
       $.ajax({
-        method: "PUT",
+        method: "POST",
         headers: {
           'Content-Type' : 'application/json'
         },
