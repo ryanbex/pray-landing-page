@@ -95,14 +95,13 @@
   function clickCounter() {
       ga('pray.send', 'event', 'buttons', 'click', 'pray', 1);
       ga('bex.send', 'event', 'buttons', 'click', 'pray', 1);
-      var prayerEvent = 'ucla-shooting';
       $.ajax({
         method: "POST",
         headers: {
           'Content-Type' : 'application/json'
         },
         url: "https://wsmtet5y0c.execute-api.us-east-1.amazonaws.com/prod/prayer-count",
-        data: '{ "prayerEvent": "'+prayerEvent+'"}'
+        data: $.param({ prayerEvent: "ucla-shooting"})
       }).done(function( response ) {
           console.log( response );
           document.getElementById("result").innerHTML = "";
