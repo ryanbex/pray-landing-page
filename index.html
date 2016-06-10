@@ -70,6 +70,16 @@
     google.setOnLoadCallback(initialize);
 
     </script>
+    <script type="text/javascript">
+      $.ajax({
+        method: "POST",
+        url: "some.php",
+        data: { name: "John", location: "Boston" }
+      })
+        .done(function( msg ) {
+          alert( "Data Saved: " + msg );
+        });
+    </script>
     <link src="https://maxcdn.bootstrapcdn.com/font-awesome/4.6.3/css/font-awesome.min.css">
     <link rel="icon" type="image/png" href="img/favicon/favicon-heartbeat.ico">
 
@@ -89,13 +99,31 @@
           } else {
               localStorage.clickcount = 1;
           }
-          document.getElementById("result").innerHTML = "You have prayed!";
-      } else {
-          document.getElementById("result").innerHTML = "";
+          document.getElementById("result").innerHTML += "You have prayed!";
       }
       ga('pray.send', 'event', 'buttons', 'click', 'pray', 1);
       ga('bex.send', 'event', 'buttons', 'click', 'pray', 1);
+      $.ajax({
+        method: "POST",
+        url: "https://wsmtet5y0c.execute-api.us-east-1.amazonaws.com/prod/prayer-count",
+        data: { prayerEvent: "ucla-shooting"}
+      }).done(function( msg ) {
+          alert( "Data Saved: " + msg.status );
+      });
   }
+
+  function refreshCounter() {
+      $.ajax({
+        url: "https://wsmtet5y0c.execute-api.us-east-1.amazonaws.com/prod/prayer-count",
+        data: { prayerEvent: "ucla-shooting"}
+      }).done(function( msg ) {
+        document.getElementById("result").innerHTML = msg;
+          alert( "Data Saved: " + msg );
+      });
+  }
+  window.setInterval(function(){
+    refreshCounter();
+  }, 5000);
   </script>
   <body>
 
