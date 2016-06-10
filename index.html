@@ -108,7 +108,7 @@
         url: "https://wsmtet5y0c.execute-api.us-east-1.amazonaws.com/prod/prayer-count",
         data: { prayerEvent: "ucla-shooting"}
       }).done(function( msg ) {
-          alert( "Data Saved: " );
+          console.log( msg );
       });
   }
 
@@ -118,7 +118,7 @@
         data: { prayerEvent: "ucla-shooting"}
       }).done(function( msg ) {
         document.getElementById("result").innerHTML = msg.responseText;
-          alert( "Updated: " + msg.responseText );
+          console.log( "Updated: " + msg );
       });
   }
   window.setInterval(function(){
