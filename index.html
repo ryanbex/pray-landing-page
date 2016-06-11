@@ -96,8 +96,9 @@
           console.log( response );
           document.getElementById("result").innerHTML = "";
           document.getElementById("result").innerHTML = "You've prayed!";
+          refreshCounter();
       });
-      refreshCounter();
+      
   }
 
   function refreshCounter() {
@@ -110,7 +111,7 @@
   }
   window.setInterval(function(){
     refreshCounter();
-  }, 20000);
+  }, 2000);
   </script>
   <body>
 
