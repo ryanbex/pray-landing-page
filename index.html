@@ -70,7 +70,7 @@
           'Content-Type' : 'application/json'
         },
         url: "https://wsmtet5y0c.execute-api.us-east-1.amazonaws.com/prod/prayer-count",
-        data: 'ucla-shooting'
+        data: 'gun-violence'
       }).done(function( response ) {
           console.log( response );
           document.getElementById("result").innerHTML = "";
@@ -82,7 +82,7 @@
   function refreshCounter() {
       $.ajax({
         url: "https://wsmtet5y0c.execute-api.us-east-1.amazonaws.com/prod/prayer-count",
-        data: { prayerEvent: "ucla-shooting"}
+        data: { prayerEvent: "gun-violence"}
       }).done(function( response ) {
         document.getElementById("result").innerHTML = response.Item.prayerCount + " Prayers";
       });
