@@ -91,7 +91,7 @@
           'Content-Type' : 'application/json'
         },
         url: "https://wsmtet5y0c.execute-api.us-east-1.amazonaws.com/prod/prayer-count",
-        data: 'turkey'
+        data: 'usa'
       }).done(function( response ) {
           console.log( response );
           document.getElementById("result").innerHTML = "";
@@ -122,8 +122,8 @@
         <div class="row">
           <div class="col-lg-6 col-lg-offset-3 col-md-6 col-md-offset-3 col-sm-8 col-sm-offset-2">
             <h2 class="display-3" style="color:black;">pray.com</h2>
-            <img src="../img/bg-turkey-flag.gif" alt="pray for turkey" style="width:500px; height:300px; margin-bottom:15px;">
-            <h3 style="color:black; font-weight:500;">pray for Turkey</h3>
+            <img src="../img/bg-usa-flag.svg" alt="pray to stop gun violence" style="width:500px; height:300px; margin-bottom:15px;">
+            <h3 style="color:black; font-weight:500;">pray to stop gun violence</h3>
             </br>
           <button class="btn-primary" onclick="clickCounter()" type="button" style="color:white; background-color:#000; border-color:#000;">Pray</button>
           <div id="result" style="color:black"></div>
