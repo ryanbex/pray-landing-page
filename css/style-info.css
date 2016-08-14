@@ -474,7 +474,7 @@ sup {
 .action-btn:hover {
   background: #000000;
   color: #FFFFFF;
-  border-color: #000000;
+  border-color: #FFFFFF;
 }
 
 .pray-btn {
@@ -489,7 +489,7 @@ sup {
 .pray-btn:hover {
   background: #000000;
   color: #FFFFFF;
-  border-color: #000000;
+  border-color: #FFFFFF;
 }
 
 .global-overlay {
