@@ -472,25 +472,25 @@ sup {
   float: left;
 }
 .action-btn:hover {
-  background: #000000;
-  color: #FFFFFF;
-  border-color: #FFFFFF;
+  background: #FFD800;
+  color: #20232D;
+  border-color: #FFD800;
 }
 
 .pray-btn {
-  background: #FFD800;
+  background: #20232D;
   font-weight: 600;
   padding: 0.7em 2em;
-  color: #000000;
+  color: #FFFFFF;
   margin-bottom: 15px;
-  border: 2px solid #FFD800;
+  border: 2px solid #20232D;
   display: block;
   float: left;
 }
 .pray-btn:hover {
-  background: #000000;
-  color: #FFFFFF;
-  border-color: #000000;
+  background: #FFD800;
+  color: #20232D;
+  border-color: #FFD800;
 }
 
 .global-overlay {
@@ -508,7 +508,7 @@ sup {
   overflow: hidden;
   top: 0;
   left: -50%;
-  background: #000000;
+  background: #20232D;
   /*background: rgba(32, 35, 45, 0.8);*/
   width: 100%;
   height: 100%;
@@ -1252,7 +1252,7 @@ sup {
   -ms-border-radius: 0;
   border-radius: 0;
   font-family: "Open Sans", "Helvetica Neue", "Lucida Grande", Arial, Verdana, sans-serif;
-  background: #FFFFFF;
+  background: #20232D;
   color: #FFFFFF;
   height: 50px;
   padding: 1em 0;
@@ -1270,7 +1270,7 @@ sup {
   transition: all 0.3s cubic-bezier(0, 0, 0.58, 1);
 }
 #subscribe #notifyMe .form-group button.submit:hover {
-  background: #00af94;
+  background: #FFD800;
   color: #FFFFFF;
 }
 #subscribe .block-message {
@@ -1520,7 +1520,7 @@ sup {
   font-size: 1em;
   display: block;
   margin: 0 auto 0;
-  background: #000000;
+  background: #20232D;
   color: #FFFFFF;
   -webkit-border-radius: 0;
   -moz-border-radius: 0;
@@ -1532,7 +1532,7 @@ sup {
 }
 #contact-form button#valid-form:hover {
   background: #FFD800;
-  color: #000000;
+  color: #20232D;
 }
 
 #block-answer {
