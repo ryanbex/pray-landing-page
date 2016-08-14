@@ -1577,7 +1577,7 @@ sup {
   transition: all 0.7s cubic-bezier(0.42, 0, 0.58, 1);
 }
 .social-icons i {
-  color: #FFFFFF;
+  color: #20232D;
   -webkit-transition: all 0.3s cubic-bezier(0, 0, 0.58, 1);
   -moz-transition: all 0.3s cubic-bezier(0, 0, 0.58, 1);
   -ms-transition: all 0.3s cubic-bezier(0, 0, 0.58, 1);
@@ -1605,11 +1605,11 @@ sup {
   transition: all 0.3s cubic-bezier(0, 0, 0.58, 1);
 }
 .social-icons a:hover {
-  color: #FFFFFF;
+  color: #FFD800;
   background: transparent;
 }
 .social-icons a:hover i {
-  color: #FFFFFF;
+  color: #FFD800;
   -webkit-transform: scale(1.2);
   -moz-transform: scale(1.2);
   -ms-transform: scale(1.2);
