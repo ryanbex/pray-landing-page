@@ -707,7 +707,7 @@ sup {
   -webkit-box-shadow: 0 0 1px rgba(0, 0, 0, 0.2);
   -moz-box-shadow: 0 0 1px rgba(0, 0, 0, 0.2);
   box-shadow: 0 0 1px rgba(0, 0, 0, 0.2);
-  background: #000000;
+  background: #FFFFFF;
 }
 #right-side .content .prayer-event figure.clear-second {
   clear: both;
@@ -827,7 +827,7 @@ sup {
   -webkit-box-shadow: 0 0 1px rgba(0, 0, 0, 0.2);
   -moz-box-shadow: 0 0 1px rgba(0, 0, 0, 0.2);
   box-shadow: 0 0 1px rgba(0, 0, 0, 0.2);
-  background: #FFFFFF;
+  background: #000000;
 }
 #right-side .content .photo-line figure.clear-second {
   clear: both;
@@ -1520,7 +1520,7 @@ sup {
   font-size: 1em;
   display: block;
   margin: 0 auto 0;
-  background: #FFFFFF;
+  background: #000000;
   color: #FFFFFF;
   -webkit-border-radius: 0;
   -moz-border-radius: 0;
@@ -1531,8 +1531,8 @@ sup {
   line-height: 10px;
 }
 #contact-form button#valid-form:hover {
-  background: #00af94;
-  color: #FFFFFF;
+  background: #FFD800;
+  color: #000000;
 }
 
 #block-answer {
