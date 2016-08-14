@@ -1705,6 +1705,7 @@ footer p {
     padding: 0.7em 0;
     float: none;
     margin: 0 auto;
+    margin-bottom: 15px;
     max-width: 50%;
   }
 
