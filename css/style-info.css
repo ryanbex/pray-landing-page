@@ -466,11 +466,27 @@ sup {
   font-weight: 600;
   padding: 0.7em 2em;
   color: #FFFFFF;
+  margin-right: 10px;
   border: 2px solid #00c8aa;
   display: block;
   float: left;
 }
 .action-btn:hover {
+  background: #FFFFFF;
+  color: #2B2D35;
+  border-color: #FFFFFF;
+}
+
+.pray-btn {
+  background: #00c8aa;
+  font-weight: 600;
+  padding: 0.7em 2em;
+  color: #FFFFFF;
+  border: 2px solid #00c8aa;
+  display: block;
+  float: left;
+}
+.pray-btn:hover {
   background: #FFFFFF;
   color: #2B2D35;
   border-color: #FFFFFF;
@@ -1691,6 +1707,13 @@ footer p {
     max-width: 50%;
   }
 
+  .pray-btn {
+    padding: 0.7em 0;
+    float: none;
+    margin: 0 auto;
+    max-width: 50%;
+  }
+
   #left-side {
     position: relative;
     width: 100%;
@@ -1762,6 +1785,11 @@ footer p {
     min-width: 60%;
   }
 
+  .pray-btn {
+    max-width: 70%;
+    min-width: 60%;
+  }
+
   .prayer-event figure {
     padding: 0;
     margin: 0 0 20px !important;
@@ -1824,6 +1852,11 @@ footer p {
   }
 
   .action-btn {
+    max-width: 80%;
+    min-width: 70%;
+  }
+
+  .pray-btn {
     max-width: 80%;
     min-width: 70%;
   }
