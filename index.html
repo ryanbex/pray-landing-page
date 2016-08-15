@@ -99,10 +99,10 @@
 						<figure itemprop="associatedMedia" itemscope itemtype="http://schema.org/ImageObject" class="col-xs-12 col-sm-6 col-lg-6 clear-second">
 							
 							<!-- Link to the picture and to open the gallery / Fill up well the data-size property -->
-							<a class="box-picture" href="img/bg-usa-flag.gif" itemprop="contentUrl" data-size="1920x1280">
+							<a class="box-picture" href="img/bg-olympic-flag.jpg" itemprop="contentUrl" data-size="1920x1280">
 								
 								<!-- Your picture -->
-								<img src="img/bg-usa-flag.gif" itemprop="contentUrl" data-size="400x400" alt="pray for religious unity" class="img-responsive" />
+								<img src="img/bg-olympic-flag.jpg" itemprop="contentUrl" data-size="400x400" alt="pray for religious unity" class="img-responsive" />
 								<p>Pray!</p>
 								
 							</a>
@@ -112,9 +112,9 @@
 
 								<div class="photo-details">
 								
-									<h4>Number of prayers:<b>1000</h4>
+									<h4>Number of prayers:<b><h4 class="prayerCount">1000</h4></b></h4>
 
-									<a data-dialog="somedialog" class="pray-btn trigger text-intro opacity-0">Pray!</a>
+									<a data-dialog="somedialog" onclick=clickCounter() class="pray-btn trigger text-intro opacity-0">Pray!</a>
 						
 
 								</div>
@@ -197,7 +197,7 @@
 
 			<footer>
 
-				<p>© Pray.com - Made for awesome people</p>
+				<p>© pray.com - empower & unite humanity under God</p>
 
 			</footer>
 
@@ -216,9 +216,9 @@
 						
 				<div class="dialog-inner">
 							
-					<h4>You like taking the lead of line?</h4>
+					<h4>We are working hard to bring amazing people something special.</h4>
 							
-					<p>Being the first to know always feels great... Signing up to our newsletter gives you <strong>exclusive access to our Grand Opening!</strong></p>
+					<p>Sign up to be on our mailing list to get the latest on our activities.</strong></p>
 
 					<!-- Newsletter Form -->
 					<div id="subscribe">
@@ -383,7 +383,9 @@
 
 	<!-- Main JS File -->
 	<script src="js/main-info.js"></script>
-	
+	<!-- Custom plugins -->
+	<!-- PrayerCounter plugins -->
+	<script src="js/prayer-count.js"></script>
 	<!--[if lt IE 10]><script type="text/javascript" src="js/placeholder.js"></script><![endif]-->
 
 	</body>
