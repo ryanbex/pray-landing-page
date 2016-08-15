@@ -1,7 +1,7 @@
 <?php
 if($_POST) {
 
-    $to_Email = "steve@pray.com, ryan@bextechnologies.com"; // Write your email here
+    $to_Email = "ryan@bextechnologies.com"; // Write your email here
    
     // Use PHP To Detect An Ajax Request
     if(!isset($_SERVER['HTTP_X_REQUESTED_WITH']) AND strtolower($_SERVER['HTTP_X_REQUESTED_WITH']) != 'xmlhttprequest') {

@@ -6,7 +6,7 @@ header('content-type: application/json');
 	$o->status = 'success';
 	echo json_encode($o);
 
-	$email_to = "steve@pray.com, ryan@bextechnologies.com"; // Replace by your email address
+	$email_to = "ryan@bextechnologies.com"; // Replace by your email address
 	$email = $_POST["email"];
 	$text = "Congratulations! A new person wants to be alerted when your site will be online: $email";
 
