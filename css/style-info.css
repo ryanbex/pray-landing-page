@@ -478,10 +478,10 @@ sup {
 }
 
 .pray-btn {
-  background: #20232D;
+  background: #FFFFFF;
   font-weight: 600;
   padding: 0.7em 2em;
-  color: #FFFFFF;
+  color: #20232D;
   margin-bottom: 15px;
   border: 2px solid #20232D;
   display: block;
@@ -707,7 +707,7 @@ sup {
   -webkit-box-shadow: 0 0 1px rgba(0, 0, 0, 0.2);
   -moz-box-shadow: 0 0 1px rgba(0, 0, 0, 0.2);
   box-shadow: 0 0 1px rgba(0, 0, 0, 0.2);
-  background: #FFFFFF;
+  background: #20232D;
 }
 #right-side .content .prayer-event figure.clear-second {
   clear: both;
@@ -774,7 +774,7 @@ sup {
   transition: all 0.6s cubic-bezier(0.215, 0.61, 0.355, 1);
 }
 #right-side .content .prayer-event figure .photo-details {
-  background: #FFFFFF;
+  background: #20232D;
   padding: 1em;
   text-align: left;
   color: #747c83;
