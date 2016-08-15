@@ -750,6 +750,7 @@ sup {
   opacity: 0.5;
 }
 #right-side .content .prayer-event figure a.box-picture:hover p {
+  color: #20232D;
   opacity: 1;
 }
 #right-side .content .prayer-event figure img {
