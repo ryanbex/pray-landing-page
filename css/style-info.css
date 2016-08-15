@@ -744,7 +744,7 @@ sup {
   transition: all 0.3s cubic-bezier(0.42, 0, 0.58, 1);
 }
 #right-side .content .prayer-event figure a.box-picture:hover {
-  background: #FFFFFF;
+  background: #FFD800;
 }
 #right-side .content .prayer-event figure a.box-picture:hover img {
   opacity: 0.5;
