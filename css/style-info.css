@@ -1468,6 +1468,9 @@ sup {
   color: #20232D;
   font-size: 2em;
 }
+.info-contact .item-map .contact-item i {
+  color: #FFD800;
+}
 .info-contact .item-map .contact-item a {
   font-weight: 600;
   color: #20232D;
