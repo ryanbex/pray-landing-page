@@ -1468,7 +1468,7 @@ sup {
   color: #20232D;
   font-size: 2em;
 }
-.info-contact .item-map .contact-item i {
+.info-contact .item-map .contact-item i:hover {
   color: #FFD800;
 }
 .info-contact .item-map .contact-item a {
