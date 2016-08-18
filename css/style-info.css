@@ -472,9 +472,9 @@ sup {
   float: left;
 }
 .action-btn:hover {
-  background: #FFD800;
+  background: #ef106d;
   color: #20232D;
-  border-color: #FFD800;
+  border-color: #ef106d;
 }
 
 .pray-btn {
@@ -488,9 +488,9 @@ sup {
   float: left;
 }
 .pray-btn:hover {
-  background: #FFD800;
+  background: #ef106d;
   color: #20232D;
-  border-color: #FFD800;
+  border-color: #ef106d;
 }
 
 .global-overlay {
@@ -744,7 +744,7 @@ sup {
   transition: all 0.3s cubic-bezier(0.42, 0, 0.58, 1);
 }
 #right-side .content .prayer-event figure a.box-picture:hover {
-  background: #FFD800;
+  background: #ef106d;
 }
 #right-side .content .prayer-event figure a.box-picture:hover img {
   opacity: 0.5;
@@ -1272,9 +1272,9 @@ sup {
   transition: all 0.3s cubic-bezier(0, 0, 0.58, 1);
 }
 #subscribe #notifyMe .form-group button.submit:hover {
-  background: #FFD800;
+  background: #ef106d;
   color: #20232D;
-  border-color: #FFD800;
+  border-color: #ef106d;
 }
 #subscribe .block-message {
   min-height: 50px;
@@ -1469,14 +1469,14 @@ sup {
   font-size: 2em;
 }
 .info-contact .item-map .contact-item i:hover {
-  color: #FFD800;
+  color: #ef106d;
 }
 .info-contact .item-map .contact-item a {
   font-weight: 600;
   color: #20232D;
 }
 .info-contact .item-map .contact-item a:hover {
-  color: #FFD800;
+  color: #ef106d;
 }
 
 #contact-form {
@@ -1537,7 +1537,7 @@ sup {
   line-height: 10px;
 }
 #contact-form button#valid-form:hover {
-  background: #FFD800;
+  background: #ef106d;
   color: #20232D;
 }
 
@@ -1611,11 +1611,11 @@ sup {
   transition: all 0.3s cubic-bezier(0, 0, 0.58, 1);
 }
 .social-icons a:hover {
-  color: #FFD800;
+  color: #ef106d;
   background: transparent;
 }
 .social-icons a:hover i {
-  color: #FFD800;
+  color: #ef106d;
   -webkit-transform: scale(1.2);
   -moz-transform: scale(1.2);
   -ms-transform: scale(1.2);
