@@ -33,7 +33,7 @@
                             $(".message").html('<p class="notify-valid">Service is not available at the moment.<br>Please check your internet connection or try again later.</p>').fadeIn();
                         } else {
                             $(".message").html('<p class="notify-valid">'+ s +'</p>').fadeIn();
-                            $(".message").html('<p class="notify-valid">Oops. Looks like something went wrong.<br>Please try again later.</p>').fadeIn();
+                            //$(".message").html('<p class="notify-valid">Oops. Looks like something went wrong.<br>Please try again later.</p>').fadeIn();
                         }
                     }
                 }).done(function(e) {
@@ -49,6 +49,7 @@
                             $(".message").html('<p class="notify-valid">This email address looks fake or invalid.<br>Please enter a real email address.</p>').fadeIn();
                         } else {
                             $(".fa-spinner").addClass("opacity-0").removeClass("fa-spin");
+                            $(".message").html('<p class="notify-valid">'+ s +'</p>').fadeIn();
                             $(".message").html('<p class="notify-valid">Oops. Looks like something went wrong.<br>Please try again later.</p>').fadeIn();
                         }
                     }
