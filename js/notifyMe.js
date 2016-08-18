@@ -32,8 +32,7 @@
                         if (e.status == 404) {
                             $(".message").html('<p class="notify-valid">Service is not available at the moment.<br>Please check your internet connection or try again later.</p>').fadeIn();
                         } else {
-                            $(".message").html('<p class="notify-valid">'+ s +'</p>').fadeIn();
-                            //$(".message").html('<p class="notify-valid">Oops. Looks like something went wrong.<br>Please try again later.</p>').fadeIn();
+                            $(".message").html('<p class="notify-valid">Oops. Looks like something went wrong.<br>Please try again.</p>').fadeIn();
                         }
                     }
                 }).done(function(e) {
