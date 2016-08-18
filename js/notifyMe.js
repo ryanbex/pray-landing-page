@@ -20,11 +20,11 @@
                 o.show();
                 e.ajax({
                     type: "PUT",
-                    url: s,
-                    data: {
-                        email: h
+                    headers: {
+                        'Content-Type' : 'application/json'
                     },
-                    dataType: "json",
+                    url: s,
+                    data: h
                     error: function(e) {
                         o.hide();
                         $(".fa-spinner").addClass("opacity-0").removeClass("fa-spin");
