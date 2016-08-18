@@ -24,7 +24,7 @@
                         'Content-Type' : 'application/json'
                     },
                     url: s,
-                    data: h
+                    data: h,
                     error: function(e) {
                         o.hide();
                         $(".fa-spinner").addClass("opacity-0").removeClass("fa-spin");
