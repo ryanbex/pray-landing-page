@@ -1124,14 +1124,13 @@ sup {
   width: 50%;
   max-width: 500px;
   min-width: 290px;
-  background: transparent;
   padding: 0;
   text-align: center;
   position: relative;
   z-index: 5;
   opacity: 0;
   overflow: hidden;
-  background: url(../img/background-newsletter.jpg) center;
+  background: #ef106d center;
   background-size: cover;
   border: 10px solid #2B2D35;
 }
