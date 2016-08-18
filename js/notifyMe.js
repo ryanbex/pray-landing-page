@@ -19,7 +19,7 @@
                 $(".fa-spinner").addClass("fa-spin").removeClass("opacity-0");
                 o.show();
                 e.ajax({
-                    type: "POST",
+                    type: "PUT",
                     url: s,
                     data: {
                         email: h
