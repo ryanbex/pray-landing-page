@@ -34,15 +34,10 @@
                         } else {
                             $(".message").html('<p class="notify-valid">Oops. Looks like something went wrong.<br>Please try again.</p>').fadeIn();
                         }
-                    },
-                    success: function(e) {
-                         $(".message").html('<p class="notify-valid">Than you for subscribing. <br>We\'ll be in touch</p>').fadeIn();
                     }
                 }).done(function(e) {
-                    console.log(e);
-                    console.log(e.ResponseMetadata.HTTPStatusCode);
                     o.hide();
-                    if (e.status == "success") {
+                    if (e.ResponseMetadata.HTTPStatusCode == 200) {
                         $(".fa-spinner").addClass("opacity-0").removeClass("fa-spin");
                         $(".message").removeClass("bad-email").addClass("success-full");
                         $(".block-message").addClass("show-block-valid").removeClass("show-block-error");
