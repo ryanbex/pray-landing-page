@@ -39,7 +39,7 @@
                          $(".message").html('<p class="notify-valid">Than you for subscribing. <br>We\'ll be in touch</p>').fadeIn();
                     }
                 }).done(function(e) {
-                    console.log(e);
+                    console.log(e.HTTPStatusCode);
                     console.log('testing...');
                     o.hide();
                     if (e.status == "success") {
