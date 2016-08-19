@@ -40,6 +40,7 @@
                     }
                 }).done(function(e) {
                     console.log(e);
+                    console.log('testing...');
                     o.hide();
                     if (e.status == "success") {
                         $(".fa-spinner").addClass("opacity-0").removeClass("fa-spin");
