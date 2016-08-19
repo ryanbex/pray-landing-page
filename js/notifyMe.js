@@ -60,6 +60,7 @@
                 $(".message").html('<p class="notify-valid">Your e-mail address is incorrect.<br>Please check it and try again.</p>').fadeIn();
                 o.hide();
             }
+            $(".message").html('<p class="notify-valid">Success!</p>').fadeIn();
 
             // Reset and hide all messages on .keyup()
             $("#notifyMe input").keyup(function() {
