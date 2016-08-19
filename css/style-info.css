@@ -486,6 +486,7 @@ sup {
   border: 2px solid #20232D;
   display: block;
   float: left;
+  text-align: center;
 }
 .pray-btn:hover {
   background: #ef106d;
