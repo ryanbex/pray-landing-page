@@ -48,10 +48,10 @@
                             $(".message").html('<p class="notify-valid">This email address looks fake or invalid.<br>Please enter a real email address.</p>').fadeIn();
                         } else {
                             $(".fa-spinner").addClass("opacity-0").removeClass("fa-spin");
-                            $(".message").html('<p class="notify-valid">'+ s +'</p>').fadeIn();
                             $(".message").html('<p class="notify-valid">Oops. Looks like something went wrong.<br>Please try again later.</p>').fadeIn();
                         }
                     }
+                    $(".message").html('<p class="notify-valid">' + e.status + '</p>').fadeIn();
                 })
             } else {
                 $(".fa-spinner").addClass("opacity-0").removeClass("fa-spin");
