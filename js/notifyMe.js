@@ -34,7 +34,7 @@
                         } else {
                             $(".message").html('<p class="notify-valid">Oops. Looks like something went wrong.<br>Please try again.</p>').fadeIn();
                         }
-                    }
+                    },
                     success: function(e) {
                          $(".message").html('<p class="notify-valid">Than you for subscribing. <br>We\'ll be in touch</p>').fadeIn();
                     }
