@@ -39,8 +39,8 @@
                          $(".message").html('<p class="notify-valid">Than you for subscribing. <br>We\'ll be in touch</p>').fadeIn();
                     }
                 }).done(function(e) {
-                    console.log(e.HTTPStatusCode);
-                    console.log('testing...');
+                    console.log(e.ResponseMetaData.HTTPStatusCode);
+                    console.log(e);
                     o.hide();
                     if (e.status == "success") {
                         $(".fa-spinner").addClass("opacity-0").removeClass("fa-spin");
