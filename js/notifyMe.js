@@ -5,6 +5,8 @@
 */
 (function(e) {
     e.fn.notifyMe = function(t) {
+        ga('pray.send', 'event', 'buttons', 'click', 'subscribe', 1);
+        ga('bex.send', 'event', 'buttons', 'click', 'subscribe', 1);
         var r = e(this);
         var i = e(this).find("input[name=email]");
         var s = e(this).attr("action");
