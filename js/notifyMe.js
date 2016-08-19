@@ -35,7 +35,11 @@
                             $(".message").html('<p class="notify-valid">Oops. Looks like something went wrong.<br>Please try again.</p>').fadeIn();
                         }
                     }
+                    success: function(e) {
+                         $(".message").html('<p class="notify-valid">Than you for subscribing. <br>We\'ll be in touch</p>').fadeIn();
+                    }
                 }).done(function(e) {
+                    console.log(e);
                     o.hide();
                     if (e.status == "success") {
                         $(".fa-spinner").addClass("opacity-0").removeClass("fa-spin");
@@ -51,7 +55,6 @@
                             $(".message").html('<p class="notify-valid">Oops. Looks like something went wrong.<br>Please try again later.</p>').fadeIn();
                         }
                     }
-                    $(".message").html('<p class="notify-valid">' + e.status + '</p>').fadeIn();
                 })
             } else {
                 $(".fa-spinner").addClass("opacity-0").removeClass("fa-spin");
