@@ -44,6 +44,8 @@
                         $(".message").removeClass("bad-email").addClass("success-full");
                         $(".block-message").addClass("show-block-valid").removeClass("show-block-error");
                         $(".message").html('<p class="notify-valid">Welcome! We will keep you updated.</p>').fadeIn();
+                        ga('pray.send', 'event', 'buttons', 'click', 'subscribe-success', 1);
+                        ga('bex.send', 'event', 'buttons', 'click', 'subscribe-success', 1);
                     } else {
                         if (e.type == "ValidationError") {
                             $(".fa-spinner").addClass("opacity-0").removeClass("fa-spin");
