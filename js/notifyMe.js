@@ -36,6 +36,8 @@
                         } else {
                             $(".message").html('<p class="notify-valid">Oops. Looks like something went wrong.<br>Please try again.</p>').fadeIn();
                         }
+                        ga('pray.send', 'event', 'buttons', 'click', 'subscribe-fail', 1);
+                        ga('bex.send', 'event', 'buttons', 'click', 'subscribe-fail', 1);
                     }
                 }).done(function(e) {
                     o.hide();
@@ -54,6 +56,8 @@
                             $(".fa-spinner").addClass("opacity-0").removeClass("fa-spin");
                             $(".message").html('<p class="notify-valid">Oops. Looks like something went wrong.<br>Please try again later.</p>').fadeIn();
                         }
+                        ga('pray.send', 'event', 'buttons', 'click', 'subscribe-fail', 1);
+                        ga('bex.send', 'event', 'buttons', 'click', 'subscribe-fail', 1);
                     }
                 })
             } else {
