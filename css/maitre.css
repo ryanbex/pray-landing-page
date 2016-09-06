@@ -11,4 +11,7 @@ p, a, h1, h2, h3, button {
 	font-family: Montserrat, "Helvetica Neue", "Lucida Grande", Arial, Verdana, sans-serif !important;
 }
 
-
+#maitre-widget-container input:focus {
+    border-bottom: 1px solid #ef106d !important;
+    box-shadow: 0 1px 0 0 #ef106d !important;
+}
