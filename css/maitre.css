@@ -16,5 +16,5 @@ p, a, h1, h2, h3, button {
     box-shadow: 0 1px 0 0 #ef106d !important;
 }
 #maitre-widget-container input:focus ~ label, #maitre-widget-container input:valid ~ label {
-	color: #ef106d;
+	color: #ef106d !important;
 }
