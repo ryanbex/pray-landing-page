@@ -3,5 +3,12 @@
   color: #ffffff !important;
 }
 
+#maitre-submit-button {
+	background-color: #20232D !important;
+}
+
+p, a, h1, h2, h3, button {
+	font-family: Montserrat, "Helvetica Neue", "Lucida Grande", Arial, Verdana, sans-serif !important;
+}
 
 
