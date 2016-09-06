@@ -4,7 +4,7 @@
   width: 100%;
   max-width: 500px;
   text-align: center;
-  color: #ffffff;
+  color: #ffffff !important;
 }
 
 #maitre-widget-container div,
@@ -228,4 +228,3 @@ display: none;
   }
 
 }
-</style>
