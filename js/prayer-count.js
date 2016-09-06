@@ -29,7 +29,7 @@
           'Content-Type' : 'application/json'
         },
         url: "https://wsmtet5y0c.execute-api.us-east-1.amazonaws.com/prod/prayer-count",
-        data: 'italy-earthquake'
+        data: 'saints'
       }).done(function( response ) {
           console.log( response );
           document.getElementById("result").innerHTML = "";

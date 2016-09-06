@@ -5,6 +5,7 @@
 */
 (function(e) {
     e.fn.notifyMe = function(t) {
+
         ga('pray.send', 'event', 'buttons', 'click', 'subscribe', 1);
         ga('bex.send', 'event', 'buttons', 'click', 'subscribe', 1);
         var r = e(this);
@@ -38,6 +39,7 @@
                         }
                         ga('pray.send', 'event', 'buttons', 'click', 'subscribe-fail', 1);
                         ga('bex.send', 'event', 'buttons', 'click', 'subscribe-fail', 1);
+
                     }
                 }).done(function(e) {
                     o.hide();
@@ -45,6 +47,7 @@
                         $(".fa-spinner").addClass("opacity-0").removeClass("fa-spin");
                         $(".message").removeClass("bad-email").addClass("success-full");
                         $(".block-message").addClass("show-block-valid").removeClass("show-block-error");
+
                         $(".message").html('<p class="notify-valid">Welcome! We will keep you updated.</p>').fadeIn();
                         ga('pray.send', 'event', 'buttons', 'click', 'subscribe-success', 1);
                         ga('bex.send', 'event', 'buttons', 'click', 'subscribe-success', 1);
