@@ -2,8 +2,8 @@
   function clickCounter() {
       ga('pray.send', 'event', 'buttons', 'click', 'pray', 1);
       ga('bex.send', 'event', 'buttons', 'click', 'pray', 1);
-      generalPrayerCounter();
-      prayerEventCounter();
+      //generalPrayerCounter();
+      //prayerEventCounter();
       
   }
 
@@ -45,7 +45,8 @@
         document.getElementById("result").innerHTML = response.Item.prayerCount + " Prayers";
       });
   }
-
+/*
   window.setInterval(function(){
     refreshCounter();
   }, 2000);
+  */
