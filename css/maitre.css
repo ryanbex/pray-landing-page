@@ -18,3 +18,7 @@ p, a, h1, h2, h3, button {
 #maitre-widget-container input:focus ~ label, #maitre-widget-container input:valid ~ label {
 	color: #ef106d !important;
 }
+
+#maitre-people-ahead-number, #maitre-people-ahead-text {
+	color: #ef106d !important;
+}
