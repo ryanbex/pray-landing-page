@@ -161,4 +161,5 @@
             o[r](n, i)
         })
     })
+    console.log($this);
 });
