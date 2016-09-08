@@ -150,6 +150,7 @@
             o = $.data(this, r), o && o.destroy(), o = new i(this, e, t), o.index = $[r].lookup.push(o) - 1, $.data(this, r, o)
         }), this
     }, $(document).ready(function() {
+        console.log(this);
         var e = $(window);
         e.on("resize." + r, function() {
             for (var e = $[r].lookup.length, t = 0, o; e > t; t++) o = $[r].lookup[t], o && o.settings.resizing && o.resize()
@@ -162,6 +163,6 @@
             o[r](n, i)
         })
     })
-    console.log(this);
+
 
 });
