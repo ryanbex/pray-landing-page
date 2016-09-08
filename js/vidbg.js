@@ -96,6 +96,7 @@
                 defaultPlaybackRate: d.playbackRate
             })
         } catch (f) {
+        	console.log('error');
             throw new Error(s)
         }
         u.css({
@@ -161,5 +162,5 @@
             o[r](n, i)
         })
     })
-    console.log($this);
+
 });
