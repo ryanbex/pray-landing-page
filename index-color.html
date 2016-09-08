@@ -21,7 +21,8 @@
         <link rel="apple-touch-icon" sizes="57x57" href="img/favicon-standard-iphone.png">
 
         <!-- ============== Resources style ============== -->
-        <link rel="stylesheet" href="css/style.css" />
+        <link rel="stylesheet" href="css/style-color.css" />
+        <link rel="stylesheet" href="css/maitre.css" />
 
 		<!-- Modernizr runs quickly on page load to detect features -->
 		<script src="js/modernizr.custom.js"></script>
@@ -485,9 +486,6 @@
 	<!-- Contact form plugin -->
 	<script src="js/contact-me.js"></script>
 
-	<!-- Local video plugin -->
-	<script src="js/vidbg.min.js"></script>
-
 	<!-- Scroll plugin -->
 	<script src="js/jquery.mousewheel.js"></script>
 
@@ -506,25 +504,6 @@
 
 	<!-- Main JS File -->
 	<script src="js/main.js"></script>
-
-	<script>
-	$(window).load(function() {
-		$(function($){
-			$('body').vidbg({
-					'mp4': 'media/your-video.mp4', // Link to your video
-					'poster': 'media/device-background.jpg', // Picture displayed on mobile
-				}, {
-				
-				// Options
-				muted: false,
-				loop: true,
-				overlay: true,
-				overlayColor: '#000',
-				overlayAlpha: '0.3',
-			});
-		});
-	});
-	</script>
 	
 	<!--[if lt IE 10]><script type="text/javascript" src="js/placeholder.js"></script><![endif]-->
 

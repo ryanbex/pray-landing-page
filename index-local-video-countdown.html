@@ -56,8 +56,9 @@
 
 			<div class="content">
 
-				<h1 class="text-intro opacity-0">Hey Guys!<br>
-					We're Coming Soon...</h1>
+				<h1 class="text-intro opacity-0">Launching in :
+					<div id="getting-started"></div>
+				</h1>
 
 				<h2 class="text-intro opacity-0">Perfect and awesome template to present your future product or service.<br>
 					Hooking audience attention is all in the opener.</h2>
@@ -503,6 +504,19 @@
 
 	<!-- PhotoSwipe UI JS file -->
 	<script src="js/photoswipe-ui-default.js"></script>
+
+	<!-- Countdown plugin -->
+	<script src="js/jquery.countdown.js"></script>
+
+	<script>
+	$("#getting-started")
+		// Year/Month/Day Hour:Minute:Second
+		.countdown("2016/10/24 15:30:30", function(event) {
+			$(this).text(
+				event.strftime('%D Days %Hh %Mm %Ss')
+			);
+	});
+	</script>
 
 	<!-- Main JS File -->
 	<script src="js/main.js"></script>
