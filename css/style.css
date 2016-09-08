@@ -1839,7 +1839,7 @@ footer p {
 
   .brand-logo {
     position: relative;
-    left: 50%;
+    left: 10%;
     -webkit-transform: translateX(-50%);
     -moz-transform: translateX(-50%);
     -ms-transform: translateX(-50%);
