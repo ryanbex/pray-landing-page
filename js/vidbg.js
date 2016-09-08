@@ -95,8 +95,9 @@
                 playbackRate: d.playbackRate,
                 defaultPlaybackRate: d.playbackRate
             })
+            console.log('good ' + p + u);
         } catch (f) {
-        	console.log('error');
+
             throw new Error(s)
         }
         u.css({
