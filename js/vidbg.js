@@ -96,7 +96,6 @@
                 defaultPlaybackRate: d.playbackRate
             })
         } catch (f) {
-
             throw new Error(s)
         }
         u.css({
@@ -122,8 +121,10 @@
             d.resizing && e.resize()
         }), l.append(u), d.overlay && $("<div class='vidbg-overlay' style='position:absolute;top:0;right:0;left:0;bottom:0;background: rgba(" + o(d.overlayColor).r + ", " + o(d.overlayColor).g + ", " + o(d.overlayColor).b + ", " + d.overlayAlpha + ")'></div>").insertAfter($(".vidbg-container > video"))
     }, i.prototype.getVideoObject = function() {
+        console.log('getthisvideo')
         return this.$video[0]
     }, i.prototype.resize = function() {
+        console.log('getthisvideo' + this.$video)
         if (this.$video) {
             var e = this.$wrapper,
                 t = this.$video,
