@@ -2,6 +2,7 @@
     "function" == typeof define && define.amd ? define(["jquery"], t) : t("object" == typeof exports ? require("jquery") : e.jQuery)
 }(this, function($) {
     "use strict";
+    console.log('help');
 
     function e(e) {
         var t = {},
