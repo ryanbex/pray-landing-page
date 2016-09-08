@@ -22,14 +22,13 @@
 
         <!-- ============== Resources style ============== -->
         <link rel="stylesheet" href="css/style.css" />
-        <link rel="stylesheet" href="css/vidbg.css" />
+        <!--<link rel="stylesheet" href="css/vidbg.css" />-->
 
 		<!-- Modernizr runs quickly on page load to detect features -->
 		<script src="js/modernizr.custom.js"></script>
 	</head>
 	
-	<body>
-		<!--<div class="vidbg-container" data-vide-bg="media/your-video"></div>-->
+	<body data-vide-bg="media/your-video">
 		<!-- Page preloader -->
 		<div id="loading">
 			<div id="preloader">
@@ -152,12 +151,11 @@
 	<!-- Accelerated JavaScript animation UI JS file -->
 	<script src="js/velocity.ui.min.js"></script> 
 
-	<!-- Newsletter plugin -->
-	<script src="js/notifyMe.js"></script>
+
 
 	<!-- Local video plugin -->
-	<script src="js/vidbg.js"></script>
-	<!--<script src="js/jquery.vide.js"></script>-->
+	<!--<script src="js/vidbg.js"></script>-->
+	<script src="js/jquery.vide.js"></script>
 	<script>
 	$(window).load(function() {
 		$(function($){
@@ -177,12 +175,6 @@
 		});
 	});
 	</script>
-
-	<!-- Scroll plugin -->
-	<script src="js/jquery.mousewheel.js"></script>
-
-	<!-- Custom Scrollbar plugin -->
-	<script src="js/jquery.mCustomScrollbar.js"></script>
 
 	<!-- Popup Newsletter Form -->
 	<script src="js/classie.js"></script>
