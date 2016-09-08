@@ -498,8 +498,13 @@
 
 	<!-- Main JS File -->
 	<script src="js/main.js"></script>
-	<source src="media/pray.mp4">
-	<source src="media/device-background.jpg">
+		<div class="video-wrapper" id="vidbg">
+            <video autoplay="" loop="">
+                <!--<source src="/assets/video/4216.webm" type="video/webm">-->
+                <source src="media/pray.mp4" type="video/mp4">
+
+            </video>
+        </div>
 	<script>
 	$(window).load(function() {
 		console.log('loading.......')
