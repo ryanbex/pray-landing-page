@@ -29,6 +29,7 @@
 	</head>
 	
 	<body>
+		<div class="vidbg-container" data-vide-bg="media/your-video"></div>
 		<!-- Page preloader -->
 		<div id="loading">
 			<div id="preloader">
@@ -155,11 +156,12 @@
 	<script src="js/notifyMe.js"></script>
 
 	<!-- Local video plugin -->
-	<script src="js/vidbg.js"></script>
+	<!--<script src="js/vidbg.js"></script>-->
+	<script src="js/jquery.vide.js"></script>
 		<script>
 	$(window).load(function() {
 		$(function($){
-			$('body').vidbg({
+			$('body').prepend(vidbg({
 					'mp4': 'https://player.vimeo.com/external/181578383.hd.mp4?s=b1bcef6e9af78486ecf2b0ff509475b99129eae6&profile_id=174', // Link to your video
 					'poster': 'media/device-background.jpg', // Picture displayed on mobile
 				}, {
@@ -175,8 +177,25 @@
 	});
 	</script>
 
+	<!-- Scroll plugin -->
+	<script src="js/jquery.mousewheel.js"></script>
+
+	<!-- Custom Scrollbar plugin -->
+	<script src="js/jquery.mCustomScrollbar.js"></script>
+
+	<!-- Popup Newsletter Form -->
+	<script src="js/classie.js"></script>
+	<script src="js/dialogFx.js"></script>
+
+	<!-- PhotoSwipe Core JS file -->
+	<script src="js/photoswipe.js"></script> 
+
+	<!-- PhotoSwipe UI JS file -->
+	<script src="js/photoswipe-ui-default.js"></script>
+
 	<!-- Main JS File -->
 	<script src="js/main.js"></script>
+	<script src="js/jquery.vide.js"></script>
 
 	
 	<!--[if lt IE 10]><script type="text/javascript" src="js/placeholder.js"></script><![endif]-->
