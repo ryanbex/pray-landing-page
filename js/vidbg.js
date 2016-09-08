@@ -44,9 +44,10 @@
         } catch (r) {
             if (r.message !== s) throw r
         }
+
+    }
     console.log('checking...');
     console.log(this);
-    }
     var r = "vidbg",
         n = {
             volume: 1,
@@ -70,6 +71,8 @@
             d = e.settings,
             c = t(d.position),
             u, l;
+        console.log('checking2...');
+        console.log(p);
         l = e.$wrapper = $('<div class="vidbg-container">').css({
             position: "absolute",
             "z-index": -1,
