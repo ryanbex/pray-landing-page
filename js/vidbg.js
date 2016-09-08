@@ -47,7 +47,6 @@
 
     }
     console.log('checking...');
-    console.log(this);
     var r = "vidbg",
         n = {
             volume: 1,
@@ -63,6 +62,8 @@
         },
         s = "Not implemented";
     i.prototype.init = function() {
+        console.log('checking2...');
+        console.log(e.$element);
         var e = this,
             i = e.path,
             n = i,
@@ -71,8 +72,6 @@
             d = e.settings,
             c = t(d.position),
             u, l;
-        console.log('checking2...');
-        console.log(p);
         l = e.$wrapper = $('<div class="vidbg-container">').css({
             position: "absolute",
             "z-index": -1,
