@@ -90,8 +90,6 @@
             position: "fixed"
         }), p.prepend(l), "object" == typeof i ? (i.mp4 && (a += '<source src="' + "https://player.vimeo.com/external/181578383.hd.mp4?s=b1bcef6e9af78486ecf2b0ff509475b99129eae6&profile_id=174" + '" type="video/mp4">'), u = e.$video = $("<video>" + a + "</video>")) : u = e.$video = $('<video><source src="' + "https://player.vimeo.com/external/181578383.hd.mp4?s=b1bcef6e9af78486ecf2b0ff509475b99129eae6&profile_id=174" + '" type="video/mp4"></video>');
         try {
-            console.log('checking2...');
-            console.log(p);
             u.prop({
                 autoplay: d.autoplay,
                 loop: d.loop,
@@ -127,7 +125,6 @@
             d.resizing && e.resize()
         }), l.append(u), d.overlay && $("<div class='vidbg-overlay' style='position:absolute;top:0;right:0;left:0;bottom:0;background: rgba(" + o(d.overlayColor).r + ", " + o(d.overlayColor).g + ", " + o(d.overlayColor).b + ", " + d.overlayAlpha + ")'></div>").insertAfter($(".vidbg-container > video"))
     }, i.prototype.getVideoObject = function() {
-        console.log('getthisvideo');
         return this.$video[0]
     }, i.prototype.resize = function() {
         console.log('getthisvideo' + this.$video);
@@ -157,8 +154,8 @@
             o = $.data(this, r), o && o.destroy(), o = new i(this, e, t), o.index = $[r].lookup.push(o) - 1, $.data(this, r, o)
         }), this
     }, $(document).ready(function() {
-        console.log(this);
         var e = $(window);
+        console.log(e);
         e.on("resize." + r, function() {
             for (var e = $[r].lookup.length, t = 0, o; e > t; t++) o = $[r].lookup[t], o && o.settings.resizing && o.resize()
         }), e.on("unload." + r, function() {
