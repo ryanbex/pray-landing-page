@@ -29,7 +29,6 @@
 	</head>
 	
 	<body>
-<div class="vidbg-container" style="position: fixed; z-index: -1; top: 0px; left: 0px; bottom: 0px; right: 0px; overflow: hidden; background-image: none; background-size: cover; background-position: 50% 50%; background-repeat: no-repeat;"><video autoplay="" loop="" style="margin: auto; position: absolute; z-index: -1; top: 50%; left: 50%; transform: translate(-50%, -50%); visibility: visible; opacity: 1; width: 1282px; height: auto;"><source src="https://player.vimeo.com/external/181578383.hd.mp4?s=b1bcef6e9af78486ecf2b0ff509475b99129eae6&profile_id=174" type="video/mp4"></video><div class="vidbg-overlay" style="position:absolute;top:0;right:0;left:0;bottom:0;background: rgba(0, 0, 0, 0.3)"></div></div>
 		<!-- Page preloader -->
 		<div id="loading">
 			<div id="preloader">
@@ -155,11 +154,26 @@
 	<!-- Newsletter plugin -->
 	<script src="js/notifyMe.js"></script>
 
-	<!-- Contact form plugin -->
-	<script src="js/contact-me.js"></script>
-
 	<!-- Local video plugin -->
 	<script src="js/vidbg.js"></script>
+		<script>
+	$(window).load(function() {
+		$(function($){
+			$('body').vidbg({
+					'mp4': 'https://player.vimeo.com/external/181578383.hd.mp4?s=b1bcef6e9af78486ecf2b0ff509475b99129eae6&profile_id=174', // Link to your video
+					'poster': 'media/device-background.jpg', // Picture displayed on mobile
+				}, {
+				
+				// Options
+				muted: false,
+				loop: true,
+				overlay: true,
+				overlayColor: '#000',
+				overlayAlpha: '0.3',
+			});
+		});
+	});
+	</script>
 
 	<!-- Scroll plugin -->
 	<script src="js/jquery.mousewheel.js"></script>
@@ -180,24 +194,7 @@
 	<!-- Main JS File -->
 	<script src="js/main.js"></script>
 	<script src="js/jquery.vide.js"></script>
-	<script>
-	$(window).load(function() {
-		$(function($){
-			$('body').vidbg({
-					'mp4': 'https://player.vimeo.com/external/181578383.hd.mp4?s=b1bcef6e9af78486ecf2b0ff509475b99129eae6&profile_id=174', // Link to your video
-					'poster': 'media/device-background.jpg', // Picture displayed on mobile
-				}, {
-				
-				// Options
-				muted: false,
-				loop: true,
-				overlay: true,
-				overlayColor: '#000',
-				overlayAlpha: '0.3',
-			});
-		});
-	});
-	</script>
+
 	
 	<!--[if lt IE 10]><script type="text/javascript" src="js/placeholder.js"></script><![endif]-->
 

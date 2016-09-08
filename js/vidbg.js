@@ -44,6 +44,8 @@
         } catch (r) {
             if (r.message !== s) throw r
         }
+    console.log('checking...')
+    console.log(this);
     }
     var r = "vidbg",
         n = {
@@ -85,6 +87,8 @@
         }), "object" == typeof i && (i.poster ? n = i.poster : i.mp4 ? n = i.mp4 : i.webm && (n = i.webm)), l.css("background-image", "url(" + n + ")"), "static" === p.css("position") && p.css("position", "relative"), p.css("z-index", "1"), p.is("body") && l.css({
             position: "fixed"
         }), p.prepend(l), "object" == typeof i ? (i.mp4 && (a += '<source src="' + "https://player.vimeo.com/external/181578383.hd.mp4?s=b1bcef6e9af78486ecf2b0ff509475b99129eae6&profile_id=174" + '" type="video/mp4">'), u = e.$video = $("<video>" + a + "</video>")) : u = e.$video = $('<video><source src="' + "https://player.vimeo.com/external/181578383.hd.mp4?s=b1bcef6e9af78486ecf2b0ff509475b99129eae6&profile_id=174" + '" type="video/mp4"></video>');
+        console.log('checking2...');
+        console.log(p);
         try {
             u.prop({
                 autoplay: d.autoplay,
