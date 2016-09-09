@@ -23,3 +23,8 @@ p, a, h1, h2, h3, button {
 	color: #ef106d !important;
 }
 
+#maitre-widget-container input {
+    border-bottom: 1px solid #20232d;
+    background: transparent;
+}
+
