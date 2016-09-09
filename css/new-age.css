@@ -201,9 +201,9 @@ header .device-container .screen img {
     max-width: none;
     margin: 0;
     position: absolute;
-    top: 40%;
+    top: 45%;
     transform: translateY(-50%);
-    left: 10%;
+    left: 15%;
   }
   header .header-content .header-content-inner h1 {
     font-size: 35px;
