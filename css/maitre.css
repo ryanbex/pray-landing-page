@@ -28,7 +28,7 @@ p, a, h1, h2, h3, button {
     background: transparent !important;
 }
 
-#maitre-widget-container p, #maitre-widget-container h1, #maitre-widget-container h2, #maitre-widget-container a, #maitre-widget-container h3, #maitre-widget-container h4 {
+#maitre-widget-container p, #maitre-widget-container h1, #maitre-widget-container h2, #maitre-widget-container a {
 	color: #20232d !important;
 }
 
