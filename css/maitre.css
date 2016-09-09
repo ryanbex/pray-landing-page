@@ -24,11 +24,11 @@ p, a, h1, h2, h3, button {
 }
 
 #maitre-widget-container input {
-    border-bottom: 1px solid #20232d;
-    background: transparent;
+    border-bottom: 1px solid #20232d !important;
+    background: transparent !important;
 }
 
 #maitre-main-header, #maitre-status {
-	color: #20232d;
+	color: #20232d !important;
 }
 
