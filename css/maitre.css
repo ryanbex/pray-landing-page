@@ -28,7 +28,7 @@ p, a, h1, h2, h3, button {
     background: transparent;
 }
 
-#maitre-form p, #maitre-form a {
+#maitre-main-header, #maitre-status {
 	color: #20232d;
 }
 
