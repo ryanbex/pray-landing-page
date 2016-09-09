@@ -28,7 +28,7 @@ p, a, h1, h2, h3, button {
     background: transparent !important;
 }
 
-#maitre-main-header, #maitre-status {
+#maitre-content p, #maitre-content h1, #maitre-content h2, #maitre-content a, #maitre-content h3, #maitre-content h4 {
 	color: #20232d !important;
 }
 
