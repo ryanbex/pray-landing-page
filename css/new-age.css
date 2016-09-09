@@ -203,6 +203,7 @@ header .device-container .screen img {
     position: absolute;
     top: 40%;
     transform: translateY(-50%);
+    left: 10%;
   }
   header .header-content .header-content-inner h1 {
     font-size: 35px;
