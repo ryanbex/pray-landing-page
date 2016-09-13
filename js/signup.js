@@ -1,4 +1,5 @@
 $(document).ready(function() {
+	console.log('inside');
     "use strict"; // Start of use strict
 	$("#maitre-submit-button").click( function() {
 		ga('pray.send', 'event', 'buttons', 'click', 'signup', 1);
