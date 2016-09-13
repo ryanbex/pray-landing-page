@@ -1,15 +1,15 @@
 $(document).ready(function() {
 	console.log('inside');
     "use strict"; // Start of use strict
-	$("#maitre-submit-button").click( function() {
-		ga('pray.send', 'event', 'buttons', 'click', 'signup', 1);
+    $('.content').on('click', '#maitre-submit-button', function() {
+    	ga('pray.send', 'event', 'buttons', 'click', 'signup', 1);
 		ga('bex.send', 'event', 'buttons', 'click', 'signup', 1);
 		var email = $("input[type=email]").val();
 		console.log( 'submit button fired' );
 		if (email) {
 			subscribe(email);
 		}
-	});
+    })
 
 	function subscribe(email) {
 		console.log( 'subscribe function fired' );
