@@ -25,5 +25,5 @@
 			ga('bex.send', 'event', 'buttons', 'click', 'signup-success', 1);
 		});
 	}
-})(jQuery); // End of use strict
+})(); // End of use strict
 
