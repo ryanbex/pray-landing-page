@@ -1,4 +1,4 @@
-(function($) {
+$(document).ready(function() {
     "use strict"; // Start of use strict
 	$("#maitre-submit-button").click( function() {
 		ga('pray.send', 'event', 'buttons', 'click', 'signup', 1);
@@ -25,5 +25,5 @@
 			ga('bex.send', 'event', 'buttons', 'click', 'signup-success', 1);
 		});
 	}
-})(); // End of use strict
+}); // End of use strict
 
