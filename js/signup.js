@@ -3,12 +3,14 @@ $("#maitre-submit-button").click( function() {
 	ga('pray.send', 'event', 'buttons', 'click', 'signup', 1);
 	ga('bex.send', 'event', 'buttons', 'click', 'signup', 1);
 	var email = $("input[type=email]").val();
+	console.log( 'submit button fired' );
 	if (email) {
 		subscribe(email);
 	}
 });
 
 function subscribe(email) {
+	console.log( 'subscribe function fired' );
 	$.ajax({
 		method: "PUT",
 		headers: {
