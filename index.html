@@ -53,6 +53,34 @@
       ga('create', 'UA-78099169-1', 'auto', {'name': 'pray'});
       ga('send', 'pageview');
     </script>
+    <!-- pray email subscription -->
+    <script>
+    $("#maitre-submit-button").click( function() {
+        ga('pray.send', 'event', 'buttons', 'click', 'signup', 1);
+        ga('bex.send', 'event', 'buttons', 'click', 'signup', 1);
+        var email = $("input[type=email]").val();
+        console.log( 'submit button fired' );
+        if (email) {
+            subscribe(email);
+        }
+    });
+
+    function subscribe(email) {
+        console.log( 'subscribe function fired' );
+        $.ajax({
+            method: "PUT",
+            headers: {
+              'Content-Type' : 'application/json'
+            },
+            url: "https://l4dn8puutj.execute-api.us-east-1.amazonaws.com/prod/api/v1/email",
+            data: email
+        }).done(function( response ) {
+            console.log( response );
+            ga('pray.send', 'event', 'buttons', 'click', 'signup-success', 1);
+            ga('bex.send', 'event', 'buttons', 'click', 'signup-success', 1);
+        });
+    }
+    </script>
 
 </head>
 
@@ -105,7 +133,6 @@
 
     <!-- Theme JavaScript -->
     <script src="js/new-age.min.js"></script>
-    <script src="js/signup.js"></script>
 
 </body>
 
