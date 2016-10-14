@@ -32,3 +32,7 @@ p, a, h1, h2, h3, button {
 	color: #20232d !important;
 }
 
+#maitre-status {
+	dispaly: hidden;
+}
+
