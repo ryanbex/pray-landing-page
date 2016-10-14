@@ -33,6 +33,10 @@ p, a, h1, h2, h3, button {
 }
 
 #maitre-status {
-	display: hidden;
+	display: : none;
+}
+
+#maitre-thank-you {
+	display: none;
 }
 
