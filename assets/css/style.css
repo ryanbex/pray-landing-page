@@ -619,9 +619,6 @@ h2 small {
 a#newsletter {
 	outline: none;
 }
-#newsletter h4 {
-	color: #000;
-}
 
 #subscribe {
 	overflow: hidden;
@@ -842,6 +839,7 @@ h3.title-spec {
 
 #contact-form h4 {
 	margin: 0px 0 40px;
+	color: #000;
 }
 
 .form-control {
