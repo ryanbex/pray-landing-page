@@ -264,7 +264,8 @@ section.welcome-section {
 .main section.welcome-section h1 {
 	text-align: center;
 	padding: 0px 0 5px;
-	color: #f1e7c0;
+	/*color: #f1e7c0;*/
+	color: #26a69a;
 }
 
 #welcome h2 {
@@ -474,7 +475,8 @@ h3.title {
 	margin-bottom: 60px;
 	font-size: 50px;
 	letter-spacing: -1px;
-	color: #f1e7c0;
+	/*color: #f1e7c0;*/
+	color: #26a69a;
 }
 
 .main section.countdown-section h2 {
@@ -610,7 +612,8 @@ h2 small {
 /* ================================= */
 
 .fa-bell {
-	color: #f1e7c0;
+	/*color: #f1e7c0;*/
+	color: #26a69a;
 }
 
 a#newsletter {
@@ -667,7 +670,8 @@ a#newsletter {
 }
 
 #subscribe .submit.focus, #subscribe .submit:hover {
-	background-color: #f1e7c0;
+	/*background-color: #f1e7c0;*/
+	background-color: #26a69a;
 	color: #000;
 }
 
@@ -690,7 +694,8 @@ p.message {
 }
 
 form.success-full .fa, form.success-full .message {
-	color: #f1e7c0;
+	/*color: #f1e7c0;*/
+	color: #26a69a;
 }
 
 form.error .fa, form.error .message {
@@ -736,7 +741,8 @@ form.bad-email .fa, form.bad-email .message {
 }
 
 .contact-button {
-    background: #f1e7c0;
+    /*background: #f1e7c0;*/
+    background: #26a69a;
     border-radius: 5px;
     border: 1px solid #ded2a1;
     color: #333;
@@ -806,7 +812,8 @@ form.bad-email .fa, form.bad-email .message {
 }
 
 .main section.contact-section h1 {
-	color: #f1e7c0;
+	/*color: #f1e7c0;*/
+	color: #26a69a;
 	text-align: center;
 	padding: 0;
 	margin-bottom: 15px;
@@ -815,7 +822,8 @@ form.bad-email .fa, form.bad-email .message {
 
 h3.title-spec {
 	font-family: 'Open sans', 'Helvetica Neue', 'Lucida Grande', Arial, Verdana, sans-serif;
-	color: #f1e7c0;
+	/*color: #f1e7c0;*/
+	color: #26a69a;
 	display: block;
 	font-size: 30px;
 	font-weight: 700;
@@ -865,7 +873,8 @@ h3.title-spec {
 }
 
 .specsend:hover {
-	background: #f1e7c0 !important;
+	/*background: #f1e7c0 */
+	background: #26a69a !important;
 	color: #333333 !important;
 	-webkit-transition: all 0.3s ease-in-out !important;
 	-moz-transition: all 0.3s ease-in-out !important;
@@ -893,7 +902,8 @@ h3.title-spec {
 }
 
 .form-control:focus {
-	border-color: #f1e7c0;
+	/*border-color: #f1e7c0;*/
+	border-color: #26a69a;
 	box-shadow: 0 0px 0px rgba(0, 0, 0, 0.075) inset, 0 0 0px rgba(102, 175, 233, 0.6);
 	outline: 0 none;
 }
@@ -1025,8 +1035,10 @@ h3.title-spec {
 }
 
 .fa-info:hover, .fa-play:hover, .fa-pause:hover {
-	border-color: #f1e7c0;
-	background: #f1e7c0;
+	/*border-color: #f1e7c0;*/
+	border-color: #26a69a;
+	/*background: #f1e7c0;*/
+	background: #26a69a;
 	color: #333;
 	-webkit-transition: all 500ms ease 0s;
 	-moz-transition: all 500ms ease 0s;
@@ -1077,7 +1089,8 @@ footer p {
 	font-weight: 100;
 	font-size: 35px;
 	color:#493c4c;
-	background-color: #f1e7c0;
+	/*background-color: #f1e7c0;*/
+	background-color: #26a69a;
 	padding: 10px 0 13px;
 	display: block;
 	text-align: center;
@@ -1291,7 +1304,8 @@ a#go-top {
   float:left;
   }    
     .ball:nth-child(1) {
-      background: #f1e7c0;
+      /*background: #f1e7c0;*/
+      background: #26a69a;
       -webkit-animation: right 1s infinite ease-in-out;
       -moz-animation: right 1s infinite ease-in-out;
       animation: right 1s infinite ease-in-out;    
@@ -1305,7 +1319,8 @@ a#go-top {
     }
 
     .ball:nth-child(3) {
-      background: #f1e7c0;
+      /*background: #f1e7c0;*/
+      background: #26a69a;
       -webkit-animation: right 1.05s infinite ease-in-out;
       -moz-animation: right 1.05s infinite ease-in-out;
       animation: right 1.05s infinite ease-in-out;
@@ -1319,7 +1334,8 @@ a#go-top {
      }
 
     .ball:nth-child(5) {
-      background: #f1e7c0;  
+      /*background: #f1e7c0;*/
+      background: #26a69a;  
       -webkit-animation: right 1.1s infinite ease-in-out;
       -moz-animation: right 1.1s infinite ease-in-out;
       animation: right 1.1s infinite ease-in-out;
@@ -1333,7 +1349,8 @@ a#go-top {
      }
 
     .ball:nth-child(7) {
-      background: #f1e7c0;  
+      /*background: #f1e7c0;*/
+      background: #26a69a;  
       -webkit-animation: right 1s infinite ease-in-out;
       -moz-animation: right 1s infinite ease-in-out;
       animation: right 1s infinite ease-in-out;
