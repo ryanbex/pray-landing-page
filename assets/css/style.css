@@ -923,20 +923,20 @@ h3.title-spec {
 .requiretop::-webkit-input-placeholder,
 .requiretop::-webkit-input-placeholder
 {
-	color:    #000 !important;
+	color:    #EEE !important;
 }
 
 
 .requiretop:-moz-placeholder,
 .requiretop:-moz-placeholder 
 {
-	color:    #000 !important;
+	color:    #EEE !important;
 }
 
 .requiretop:-ms-input-placeholder,
 .requiretop:-ms-input-placeholder 
 {
-	color:    #000 !important;
+	color:    #EEE !important;
 }
 
 .error-form {
