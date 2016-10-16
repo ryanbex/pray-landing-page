@@ -38,8 +38,11 @@ nav ul a.btn, nav ul a.btn-large, nav ul a.btn-large, nav ul a.btn-flat, nav ul 
   -webkit-tap-highlight-color: transparent;
 }
 
-.btn-social {
-	padding: none !important;
+a.btn-social {
+	padding: inherit !important;
+}
+i.fa {
+	height: inherit !important;
 }
 
 .btn.disabled, .disabled.btn-large,

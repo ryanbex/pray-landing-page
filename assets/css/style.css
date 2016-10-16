@@ -828,6 +828,21 @@ form.bad-email .fa, form.bad-email .message {
 	font-size: 55px;
 }
 
+.main section.prayer-section {
+	padding: 100px 0;
+	background: #000;
+}
+
+.main section.prayer-section h1 {
+	/*color: #f1e7c0;*/
+	color: #26a69a;
+	color: #000;
+	text-align: center;
+	padding: 0;
+	margin-bottom: 15px;
+	font-size: 55px;
+}
+
 h3.title-spec {
 	font-family: 'Open sans', 'Helvetica Neue', 'Lucida Grande', Arial, Verdana, sans-serif;
 	/*color: #f1e7c0;*/
