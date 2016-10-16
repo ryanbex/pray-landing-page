@@ -1,9 +1,9 @@
 $(document).ready(function() {
 	var URL = '<api-gateway-stage-url>/contact';
-	$console.log('hello');
+	console.log('hello');
 
 	$('#formcontactus').submit(function (event) {
-		$console.log('hello2');
+		console.log('hello2');
 		event.preventDefault();
     	ga('pray.send', 'event', 'buttons', 'click', 'prayer-submitted', 1);
 		ga('bex.send', 'event', 'buttons', 'click', 'prayer-submitted', 1);
