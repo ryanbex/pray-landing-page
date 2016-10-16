@@ -9,6 +9,13 @@
 	border-radius: 1px !important;
 }
 
+#maitre-submit-button:hover {
+	background-color: #26a69a !important;
+	color: #000 !important;
+	border-radius: 1px !important;
+}
+
+
 #maitre-widget-container input:focus {
     border-bottom: 1px solid #26a69a !important;
     box-shadow: 0 1px 0 0 #26a69a !important;
