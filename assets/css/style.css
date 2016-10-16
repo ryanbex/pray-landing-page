@@ -249,7 +249,7 @@ h4 {
 }
 
 section.welcome-section {
-	background: rgba(0,0,0,0.3);
+	background: #000;
 }
 
 #welcome {
@@ -677,7 +677,7 @@ a#newsletter {
 
 .subscribe-newsletter {
 	padding: 100px 0;
-	background: rgba(0,0,0,0.3);
+	background: #000;
 }
 
 .controls .fa {
@@ -845,7 +845,7 @@ h3.title-spec {
 	background: transparent;
 	background-image: none;
 	border: none;
-	border-bottom: 1px solid #F8F8F8;
+	border-bottom: 1px solid #000;
 	border-radius: 0px;
 	box-shadow: 0 0px 0px rgba(0, 0, 0, 0.075) inset;
 	color: #000;
@@ -905,6 +905,7 @@ h3.title-spec {
 .form-control:focus {
 	/*border-color: #f1e7c0;*/
 	border-color: #26a69a;
+	color: #26a69a;
 	box-shadow: 0 0px 0px rgba(0, 0, 0, 0.075) inset, 0 0 0px rgba(102, 175, 233, 0.6);
 	outline: 0 none;
 }
@@ -912,20 +913,20 @@ h3.title-spec {
 .requiretop::-webkit-input-placeholder,
 .requiretop::-webkit-input-placeholder
 {
-	color:    #FFFFFF !important;
+	color:    #000 !important;
 }
 
 
 .requiretop:-moz-placeholder,
 .requiretop:-moz-placeholder 
 {
-	color:    #FFFFFF !important;
+	color:    #000 !important;
 }
 
 .requiretop:-ms-input-placeholder,
 .requiretop:-ms-input-placeholder 
 {
-	color:    #FFFFFF !important;
+	color:    #000 !important;
 }
 
 .error-form {
