@@ -815,7 +815,7 @@ form.bad-email .fa, form.bad-email .message {
 
 .main section.contact-section {
 	padding: 100px 0;
-	background: #EEEEEE;
+	background: #000;
 }
 
 .main section.contact-section h1 {
@@ -846,17 +846,17 @@ h3.title-spec {
 
 #contact-form h4 {
 	margin: 0px 0 40px;
-	color: #000;
+	color: #EEE;
 }
 
 .form-control {
 	background: transparent;
 	background-image: none;
 	border: none;
-	border-bottom: 1px solid #000;
+	border-bottom: 1px solid #EEE;
 	border-radius: 0px;
 	box-shadow: 0 0px 0px rgba(0, 0, 0, 0.075) inset;
-	color: #000;
+	color: #EEE;
 	display: block;
 	font-size: 14px;
 	height: 34px;
@@ -867,8 +867,10 @@ h3.title-spec {
 }
 
 .specsend {
-	background: transparent !important;
-	border: 1px solid #FFF !important;
+	background: #26a69a !important;
+	border: 1px solid #26a69a !important;
+	border-radius: 1px !important;
+	color: #000 !important;
 	margin-top: 40px;
 	width: auto;
 	padding-left: 3em !important;
@@ -1155,7 +1157,7 @@ p.text-footer {
 
 .btn-round i {
 	background: transparent;
-	/*border: 1px solid #FFF;*/
+	border: none;
 	color: #F8F8F8;
 	display: table-cell;
 	font-size: 20px;
