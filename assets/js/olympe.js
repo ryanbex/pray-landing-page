@@ -157,7 +157,7 @@ $(window).load(function() {
 		width: screenWidth,
 		height: screenHeight
 		}); 
-		
+		/*
 		 $.firefly({
 		 	color: '#F1E7C0',
 		 	minPixel: 1,
@@ -167,6 +167,7 @@ $(window).load(function() {
 		 });
 		
 		});
+		*/
 	
 	}
 	
