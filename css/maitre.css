@@ -4,7 +4,7 @@
 }
 
 #maitre-submit-button {
-	background-color: #ef106d !important;
+	background-color: #26a69a !important;
 }
 
 p, a, h1, h2, h3, h4, h5, label, text, button {
@@ -12,24 +12,24 @@ p, a, h1, h2, h3, h4, h5, label, text, button {
 }
 
 #maitre-widget-container input:focus {
-    border-bottom: 1px solid #ef106d !important;
-    box-shadow: 0 1px 0 0 #ef106d !important;
+    border-bottom: 1px solid #26a69a !important;
+    box-shadow: 0 1px 0 0 #26a69a !important;
 }
 #maitre-widget-container input:focus ~ label, #maitre-widget-container input:valid ~ label {
-	color: #ef106d !important;
+	color: #26a69a !important;
 }
 
 #maitre-people-ahead-number, #maitre-people-ahead-text, #maitre-widget-container h4 {
-	color: #ef106d !important;
+	color: #26a69a !important;
 }
 
 #maitre-widget-container input {
-    border-bottom: 1px solid #20232d !important;
+    border-bottom: 1px solid #EEE !important;
     background: transparent !important;
 }
 
 #maitre-widget-container p, #maitre-widget-container h1, #maitre-widget-container h2, #maitre-widget-container a {
-	color: #20232d !important;
+	color: #EEE !important;
 }
 
 #maitre-widget-container {
