@@ -9,10 +9,6 @@
 	border-radius: 1px !important;
 }
 
-p, a, h1, h2, h3, h4, h5, label, text, button {
-	font-family: Montserrat, "Helvetica Neue", "Lucida Grande", Arial, Verdana, sans-serif !important;
-}
-
 #maitre-widget-container input:focus {
     border-bottom: 1px solid #26a69a !important;
     box-shadow: 0 1px 0 0 #26a69a !important;

@@ -154,7 +154,7 @@ h4 {
 
 .btn:hover, .btn:focus, .btn:active, .btn.active {
     color: white;
-    background-color: transparent;
+    background-color: #00e4cf;
     border: none;
     outline: none !important;
 }
@@ -885,7 +885,7 @@ h3.title-spec {
 	background: #26a69a !important;
 	border: 1px solid #26a69a !important;
 	border-radius: 1px !important;
-	color: #000 !important;
+	color: #FFF !important;
 	margin-top: 40px;
 	width: auto;
 	padding-left: 3em !important;
