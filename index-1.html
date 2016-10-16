@@ -60,16 +60,15 @@
     </div>
     <!-- **** Loading **** -->
 
+
     <!-- Div used to show your picture on Tablet and Phone in replacement of the video -->
     <div id="picture-youtube"></div>
 
     <!-- START GLOBAL WRAPPER -->
-	<div id="wrapper-firefly" class="wrapper">
-
-        <div class="outer animated"></div>
+    <div id="wrapper-firefly" class="wrapper">
 
         <!-- START MAIN -->
-		<div class="main">
+        <div class="main">
 
             <!-- MAP -->
             <div id="map" class="animated-quick invisible index-999"></div>
@@ -77,13 +76,83 @@
             <!-- START WELCOME SECTION -->
             <section class="welcome-section" id="coming-soon">
 
-                <div class="tlt animated">WELCOME</div>
-                <!-- Write the small part just after the ?v= to change the video  -->
+                <!-- START YOUTUBE -->
                 <div id="pattern">
-                <a id="bgndVideo" class="player" data-property="{videoURL:'http://www.youtube.com/watch?v=r1DxoJqdopY',containment:'body',autoPlay:true, mute:false, startAt:0, opacity:1}">youtube</a>
+            
+                    <!-- Write the small part just after the ?v= to change the video  -->
+                    <a id="bgndVideo" class="player" data-property="{videoURL:'http://www.youtube.com/watch?v=A888TXUmoYs',containment:'body',autoPlay:true, mute:false, startAt:0, opacity:1}">youtube</a>
+
+                    <!-- START CHEVRON -->
+                    <div class="scrollbott animated opacity-0">
+                        <a data-scroll data-toggle="tooltip" data-placement="top" data-title="More" data-trigger="hover" href="#anchor" class="anchor-link">
+                            <i class="fa fa-chevron-down fa-2x"></i>
+                        </a>
+                    </div>
+                    <!-- END CHEVRON -->
+                    
                 </div>
+                <!-- END YOUTUBE -->
+
+                <div class="tlt animated">Welcome to Olympe</div>
 
                 <!-- START WELCOME BLOCK -->
+                <div id="welcome" class="welcomeblock">
+
+                    <div class="container">
+                       <div class="col-lg-12 col-md-12 col-xs-12">
+
+                            <!-- LOGO -->
+                            <img src="http://placehold.it/300x300/F1E7C0/333333&text=logo" id="brand-logo" class="animated opacity-0" alt="" height="150" width="150" />
+
+                            <!-- TEXT ROTATOR -->
+                            <h1 class="demo1 animated opacity-0" id="text-rotation"><span class="rotate">WELCOME, BIENVENUE, VÄLKOMMEN, BIENVENIDO, 欢迎</span></h1>
+
+                            <div class="col-md-offset-3 col-md-6 animated opacity-0" id="text-construction">
+                                
+                                <h2>Our website is under construction, we are working very hard to give you the best experience with this one.</h2>
+                                
+                                <span id="inline-popups">
+                                    <a data-effect="mfp-zoom-in" id="info-gotop" href="#popup-informations">
+                                        <i class="fa fa-info" data-toggle="tooltip" data-placement="bottom" data-title="Informations" data-trigger="hover"></i>
+                                    </a>
+                                </span>
+                                <a onclick="$('#bgndVideo').playYTP()">
+                                    <i class="fa fa-play" data-toggle="tooltip" data-placement="bottom" data-title="Play" data-trigger="hover"></i>
+                                </a>
+                                <a onclick="$('#bgndVideo').pauseYTP()">
+                                    <i class="fa fa-pause" data-toggle="tooltip" data-placement="bottom" data-title="Pause" data-trigger="hover"></i>
+                                </a>
+
+                            </div>
+                    
+                        </div>
+                    </div>
+
+                </div>
+                <!-- END WELCOME BLOCK -->
+                
+            </section>
+            <!-- END WELCOME SECTION -->
+
+
+
+    <!-- START GLOBAL WRAPPER 
+	<div id="wrapper-firefly" class="wrapper">
+
+        <div class="outer animated"></div>
+
+        <!-- START MAIN 
+		<div class="main">
+
+            <!-- MAP 
+            <div id="map" class="animated-quick invisible index-999"></div>
+
+            <!-- START WELCOME SECTION 
+            <section class="welcome-section" id="coming-soon">
+
+                <div class="tlt animated">WELCOME</div>
+
+                <!-- START WELCOME BLOCK 
                 <div id="welcome" class="welcomeblock">
 
                     <div class="container">
@@ -91,13 +160,13 @@
 
                             <!-- LOGO 
                             <img src="http://placehold.it/300x300/F1E7C0/333333&text=logo" id="brand-logo" class="animated opacity-0" alt="" height="150" width="150" />
-                            -->
+                            
                             <h1 id="brand-logo" class="animated opacity-0 pray-logo">PRAY</h1>
 
                             <h2 class="demo1 animated opacity-0" id="text-rotation"><span class="rotate">multimedia, communication, technology</span></h2>
                             <!-- TEXT ROTATOR 
                             <h1 class="demo1 animated opacity-0" id="text-rotation"><span class="rotate">PRAY, ORAR, प्रार्थना, 祈祷, प्रार्थना करना, TANDEM, PREGARE, BERDOA, 祈ります, صلى</span></h1>
-                            -->
+                            
 
                             <div class="col-md-offset-3 col-md-6 animated opacity-0" id="text-construction">
                                 
@@ -108,7 +177,7 @@
                                         <i class="fa fa-info" data-toggle="tooltip" data-placement="bottom" data-title="Informations" data-trigger="hover"></i>
                                     </a>
                                 </span>
-                                -->
+                                
 
                             </div>
                     
@@ -116,15 +185,15 @@
                 	</div>
 
                 </div>
-                <!-- END WELCOME BLOCK -->
+                <!-- END WELCOME BLOCK 
                 
-                <!-- START CHEVRON -->
+                <!-- START CHEVRON 
                 <div class="scrollbott animated opacity-0">
                     <a data-scroll data-toggle="tooltip" data-placement="top" data-title="More" data-trigger="hover" href="#anchor-2" class="anchor-link">
                         <i class="fa fa-chevron-down fa-2x"></i>
                     </a>
                 </div>
-                <!-- END CHEVRON -->
+                <!-- END CHEVRON 
         
 			</section>
             <!-- END WELCOME SECTION -->
@@ -674,9 +743,6 @@
     <!-- *** File used to start some plugins *** -->
     <script type="text/javascript" src="assets/js/olympe.js"></script>
     <script type="text/javascript" src="assets/js/materialize.js"></script>
-
-    <!-- *** Youtube® video as background for your page *** -->
-    <script type="text/javascript" src="assets/js/jquery.mb.YTPlayer.js"></script>
     
     <script>
     ;( function( $ ) {
