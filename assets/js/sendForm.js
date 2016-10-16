@@ -1,7 +1,8 @@
-var URL = '<api-gateway-stage-url>/contact'
-$console.log('hello');
+
 $('#formcontactus').submit(function (event) {
 	event.preventDefault();
+	var URL = '<api-gateway-stage-url>/contact';
+	$console.log('hello');
  
 	var data = {
 		name: $('#form-name').val(),
