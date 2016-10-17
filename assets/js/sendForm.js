@@ -4,8 +4,7 @@ $(document).ready(function() {
 
 	$('#formcontactus').on('click', '#prayer-button', function () {
 		console.log('hello2');
-    	ga('pray.send', 'event', 'buttons', 'click', 'prayer-submitted', 1);
-		ga('bex.send', 'event', 'buttons', 'click', 'prayer-submitted', 1);
+    	sendToGA('prayer-submitted');
 		var data = {
 			name: $('#form-name').val(),
 			email: $('#form-email').val(),
@@ -26,15 +25,25 @@ $(document).ready(function() {
 			data: JSON.stringify(data),
 			success: function () {
 				alert('Thank you for your feedback.');
-				ga('pray.send', 'event', 'buttons', 'click', 'prayer-sent', 1);
-				ga('bex.send', 'event', 'buttons', 'click', 'prayer-sent', 1);
-				document.getElementById("contactForm").reset();
+				sendToGA('prayer-sent');
+				resetForm();
 			},
 			error: function () {
 				alert('Your prayer has been submitted.');
-			 	document.getElementById("contactForm").reset();
+			 	resetForm();
 			}
 		});
 
+	}
+
+	function resetForm() {
+		$('#form-name').val("");
+		$('#form-email').val("");
+		$('#form-prayer').val("");
+	}
+
+	function sendToGA(eventName) {
+		ga('pray.send', 'event', 'buttons', 'click', eventName, 1);
+		ga('bex.send', 'event', 'buttons', 'click', eventName, 1);
 	}
 });
