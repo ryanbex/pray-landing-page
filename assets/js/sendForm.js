@@ -12,6 +12,7 @@ $(document).ready(function() {
 			prayer: $('#form-prayer').val()
 		}
 		console.log(data);
+		sendEmail(data);
 
 	});
 
