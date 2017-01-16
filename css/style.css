@@ -1,0 +1,101 @@
+:root {
+  --tuorqouise-color: rgb(11, 186, 181);
+}
+
+@font-face {
+    font-family: ProximaNova-Regular;
+    src: url('../fonts/ProximaNova-Regular.ttf');
+}
+
+@font-face {
+    font-family: ProximaNova-Bold;
+    src: url('../fonts/ProximaNova-Bold.ttf');
+}
+
+body {
+	font-family: ProximaNova-Regular;
+	color: black;
+    background: white;
+    -webkit-background-size: cover;
+    -moz-background-size: cover;
+    -o-background-size: cover;
+    background-size: cover;
+}
+
+html, body, .container-table {
+    height: 100%;
+}
+
+.container-table {
+    display: table;
+}
+
+#containerRow {
+    display: table-cell;
+    vertical-align: middle;
+}
+
+h1 {
+	text-align: center;
+    font-size: 4em;
+    margin-bottom: 0.6em;
+    font-family: ProximaNova-Bold;
+    letter-spacing: 0.2em;
+}
+
+.form-control{
+	background-color: black;
+    margin-bottom: 0.3em;
+    border-width: 0px;
+    color: black;
+}
+
+.form-actions {
+    margin: 0;
+    background-color: transparent;
+    text-align: center;
+}
+
+.bfh-phone {
+    color: black;
+}
+
+.btn {
+    background-color: var(--tuorqouise-color);
+    color: black;
+    border-color: var(--tuorqouise-color);
+}
+
+.btn.active {
+    background-color: black;
+    color: var(--tuorqouise-color);
+    border-color: black;
+}
+
+.input-field label {
+ color: black;
+}
+
+.input-field input[type=text]:focus + label {
+ color: black;
+}
+
+.input-field input[type=text] {
+border-bottom: 2px solid black;
+box-shadow: 0 1px 0 0 black;
+}
+
+.input-field input[type=tel] {
+border-bottom: 2px solid black;
+box-shadow: 0 1px 0 0 black;
+}
+
+/* label underline focus color */
+.input-field input[type=text]:focus {
+ border-bottom: 2px solid black;
+ box-shadow: 0 1px 0 0 #000;
+}
+
+.black-text {
+    color: black;
+}
