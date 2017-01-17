@@ -14,10 +14,10 @@ $("#signupForm").submit(function(event){
 		return;
 	};
 
-	alert(phone);
+	alert(organization);
 
 	// Post the form to register user
-	$.post('https://dev.pray.com/0.1/web/register', { name: name, email : email, phone: phone, organization: organization}, 
+	$.post('https://test.pray.com/0.1/web/register', { name: name, email : email, phone: phone, organization: organization}, 
 	    function(returnedData){
 			$('#myModal').modal('show');
 		}, 'json').fail(function() {
