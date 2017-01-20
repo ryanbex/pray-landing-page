@@ -7,17 +7,20 @@ $("#signupForm").submit(function(event){
     var phone = $("#phone").val().slice(1).replace(/[()-\s]/gi, '');
     var email = $("#email").val();
     var organization = $("#organization").val();
+    var server = $("#server").val() || 'api';
 
     // Show an alert if any of the fields are blank
 	if (name == "" || phone == "" || email == "") {
 		alert("Please fill out all fields");
 		return;
 	};
+  
+  alert(server);
 
-	alert(organization);
+  var url = `https://${server}.pray.com/0.1/web/register`;
 
 	// Post the form to register user
-	$.post('https://api.pray.com/0.1/web/register', { name: name, email : email, phone: phone, organization: organization}, 
+	$.post(url, { name: name, email : email, phone: phone, organization: organization}, 
 	    function(returnedData){
 			$('#myModal').modal('show');
 		}, 'json').fail(function() {

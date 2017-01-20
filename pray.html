@@ -1,0 +1,101 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="utf-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <!-- The above 3 meta tags *must* come first in the head; any other head content must come *after* these tags -->
+    <title>Pray Registration</title>
+
+    <!-- Bootstrap -->
+    <link href="css/bootstrap.min.css" rel="stylesheet">
+    <link href="css/style.css" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css?family=Lora:700" rel="stylesheet">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/materialize/0.97.1/css/materialize.min.css">
+
+
+    <!-- HTML5 shim and Respond.js for IE8 support of HTML5 elements and media queries -->
+    <!-- WARNING: Respond.js doesn't work if you view the page via file:// -->
+    <!--[if lt IE 9]>
+      <script src="https://oss.maxcdn.com/html5shiv/3.7.3/html5shiv.min.js"></script>
+      <script src="https://oss.maxcdn.com/respond/1.4.2/respond.min.js"></script>
+    <![endif]-->
+  </head>
+  <body>
+
+    <div class="container container-table">      <div class="row" id="containerRow">
+        <div class="col-md-6 col-md-offset-3">
+          <h1>PRAY</h1>
+        </div>
+        <div class="row">
+          <div class="col-md-6 col-md-offset-4">
+          <form id="signupForm">
+            <div class="form-group">
+              <div class="row">
+                <div class="input-field col-md-4">
+                  <input id="first-name" type="text" class="validate">
+                  <label for="first-name" class="black-text">First Name</label>
+                </div>
+                <div class="input-field col-md-4">
+                    <input id="last-name" type="text" class="validate">
+                    <label for="last-name" class="black-text">Last Name</label>
+                </div>
+              </div>
+            </div>
+            <div class="form-group">
+              <div class="row">
+                <div class="input-field col-md-8">
+                  <input type="tel" class="form-control input-lg bfh-phone validate" name="phone-field" id="phone">
+                  <label for="phone" class="black-text">Phone Number</label>
+                </div>
+              </div>
+            </div>
+            <div class="form-group">
+              <div class="row">
+                <div class="input-field col-md-8">
+                  <input id="email" type="text" class="validate">
+                  <label for="email" class="black-text">Email</label>
+                </div>
+              </div>
+            </div>
+            <input id="organization" type="hidden" value="Pray">
+            <div class="row">
+              <div class="col-md-8 text-center"> 
+                <button type="submit" class="btn btn-default btn-lg text-center btn-block">Submit</button>
+              </div>
+            </div>
+          </form>
+        </div>
+
+        <!-- Modal -->
+        <div class="modal fade" id="myModal" tabindex="0" role="dialog" aria-labelledby="exampleModalLabel" aria-hidden="true">
+          <div class="modal-dialog" id="myModal" role="document" aria-hidden="true">
+            <div class="modal-content">
+              <div class="modal-header">
+                <h5 class="modal-title" id="exampleModalLabel">Success!</h5>
+                <button type="button" class="close" data-dismiss="modal" aria-label="Close">
+                  <span aria-hidden="true">&times;</span>
+                </button>
+              </div>
+              <div class="modal-body">
+                <h4>Successfully registered! You should receive an email and text message from us shortly!</h4>
+              </div>
+              <div class="modal-footer">
+                <button type="button" class="btn btn-secondary" data-dismiss="modal">Close</button>
+              </div>
+            </div>
+          </div>
+        </div>
+        </div>
+      </div>
+    </div>
+
+    <!-- jQuery (necessary for Bootstrap's JavaScript plugins) -->
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/1.12.4/jquery.min.js"></script>
+    <!-- Include all compiled plugins (below), or include individual files as needed -->
+    <script src="js/bootstrap.min.js"></script>
+    <script src="js/form-scripts.js"></script>
+    <script src="js/phone-format-script.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/materialize/0.97.1/js/materialize.min.js"></script>
+  </body>
+</html>
