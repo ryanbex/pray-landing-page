@@ -28,7 +28,7 @@ $("#signupForm").submit(function(event){
   };
   alert(server);
 
-  var url = `https://${server}.pray.com/0.1/organizations`;
+  var url = `https://${server}.pray.com/0.1/web/organizations`;
   var organization = {
     name: name, 
     email : email, 
