@@ -2,9 +2,10 @@ $("#signupForm").submit(function(event){
     // cancels the form submission
     event.preventDefault();
 
+    alert('HELLO');
     // Create variables with values from form
     var name = $("#first-name").val() + " " + $("#last-name").val();
-    var phone = $("#phone").val().replace(/\D/g, '');
+    var phone = $("#phone").val().slice(1).replace(/[()-\s]/gi, '');
     var email = $("#email").val();
     var organization = $("#organization").val();
     var server = 'api';
@@ -15,7 +16,7 @@ $("#signupForm").submit(function(event){
     } else if ($("#stage").checked) {
       server = 'stage';
     } 
-    alert(server);
+
     // Show an alert if any of the fields are blank
   	if (name == "" || phone == "" || email == "") {
   		alert("Please fill out all fields");
