@@ -41,10 +41,15 @@ $("#signupForm").submit(function(event){
     zipcode: zipcode
   };
   // Post the form to register user
-  $.post(url, organization, 
+  $.post(
+      url, 
+      organization, 
       function(returnedData){
-      $('#myModal').modal('show');
-    }, 'json').fail(function() {
+        console.log('finished');
+        $('#myModal').modal('show');
+      }, 
+      'json'
+      ).fail(function() {
       alert("There was an error, please try again later");
   });
 
