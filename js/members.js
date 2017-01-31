@@ -9,11 +9,11 @@ $("#signupForm").submit(function(event){
     var email = $("#email").val();
     var organization = $("#organization").val();
     var server = 'api';
-    if ($("#test").checked) {
+    if ($("#test").prop('checked')) {
       server = 'test';
-    } else if ($("#dev").checked) {
+    } else if ($("#dev").prop('checked')) {
       server = 'dev';
-    } else if ($("#stage").checked) {
+    } else if ($("#stage").prop('checked')) {
       server = 'stage';
     } 
 
