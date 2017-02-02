@@ -2,7 +2,6 @@ $("#signupForm").submit(function(event){
     // cancels the form submission
     event.preventDefault();
 
-    alert('HELLO');
     // Create variables with values from form
     var name = $("#first-name").val() + " " + $("#last-name").val();
     var phone = $("#phone").val().slice(1).replace(/[()-\s]/gi, '');
@@ -22,7 +21,6 @@ $("#signupForm").submit(function(event){
   		alert("Please fill out all fields");
   		return;
   	};
-    alert(server);
 
     var url = `https://${server}.pray.com/0.1/web/register`;
 
